@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -196,20 +196,20 @@ TextureImporter:
       name: Enemy_Melee_Attack_64x46_0
       rect:
         serializedVersion: 2
-        x: 20
+        x: 0
         y: 0
-        width: 24
-        height: 37
+        width: 64
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0650ff5442916b230800000000000000
-      internalID: 3654135791241594208
+      spriteID: 2cb7f3c612e018741978aed430a3660e
+      internalID: 1849098453
       vertices: []
       indices: 
       edges: []
@@ -218,20 +218,20 @@ TextureImporter:
       name: Enemy_Melee_Attack_64x46_1
       rect:
         serializedVersion: 2
-        x: 85
+        x: 64
         y: 0
-        width: 21
-        height: 37
+        width: 64
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0b1f7c400e2eab270800000000000000
-      internalID: 8267169517772730800
+      spriteID: f38f73a03352c664bbead4e3c24b47bb
+      internalID: 1794945875
       vertices: []
       indices: 
       edges: []
@@ -240,20 +240,20 @@ TextureImporter:
       name: Enemy_Melee_Attack_64x46_2
       rect:
         serializedVersion: 2
-        x: 150
+        x: 128
         y: 0
-        width: 20
-        height: 37
+        width: 64
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d619aa18db164bc20800000000000000
-      internalID: 3221307100028899693
+      spriteID: 212fad75a7a0a3a499c207b19bb82125
+      internalID: 1878918668
       vertices: []
       indices: 
       edges: []
@@ -262,20 +262,20 @@ TextureImporter:
       name: Enemy_Melee_Attack_64x46_3
       rect:
         serializedVersion: 2
-        x: 215
+        x: 192
         y: 0
-        width: 18
-        height: 37
+        width: 64
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bf951ed5a7a16dbb0800000000000000
-      internalID: -4911709230737565189
+      spriteID: 29297fe0a2dd3874d87afa82c5723799
+      internalID: 303783861
       vertices: []
       indices: 
       edges: []
@@ -284,20 +284,20 @@ TextureImporter:
       name: Enemy_Melee_Attack_64x46_4
       rect:
         serializedVersion: 2
-        x: 277
+        x: 256
         y: 0
-        width: 44
-        height: 37
+        width: 64
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 80bb2e5567513a8d0800000000000000
-      internalID: -2836399742322033912
+      spriteID: c868ad44b17b28047b44e6f1eee47a7c
+      internalID: 87352210
       vertices: []
       indices: 
       edges: []
@@ -306,20 +306,20 @@ TextureImporter:
       name: Enemy_Melee_Attack_64x46_5
       rect:
         serializedVersion: 2
-        x: 341
+        x: 320
         y: 0
-        width: 43
-        height: 37
+        width: 64
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2d59e2d57202361d0800000000000000
-      internalID: -3358805543649110574
+      spriteID: b6df29be079692040a14ed95737ac357
+      internalID: 1223002144
       vertices: []
       indices: 
       edges: []
@@ -328,7 +328,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -336,14 +336,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":46.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Enemy_Melee_Attack_64x46_0: 3654135791241594208
-      Enemy_Melee_Attack_64x46_1: 8267169517772730800
-      Enemy_Melee_Attack_64x46_2: 3221307100028899693
-      Enemy_Melee_Attack_64x46_3: -4911709230737565189
-      Enemy_Melee_Attack_64x46_4: -2836399742322033912
-      Enemy_Melee_Attack_64x46_5: -3358805543649110574
+      Enemy_Melee_Attack_64x46_0: 1849098453
+      Enemy_Melee_Attack_64x46_1: 1794945875
+      Enemy_Melee_Attack_64x46_2: 1878918668
+      Enemy_Melee_Attack_64x46_3: 303783861
+      Enemy_Melee_Attack_64x46_4: 87352210
+      Enemy_Melee_Attack_64x46_5: 1223002144
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

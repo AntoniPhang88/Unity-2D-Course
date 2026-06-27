@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -196,20 +196,20 @@ TextureImporter:
       name: Enemy_Flying_Death_24x24_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 4
-        width: 21
-        height: 13
+        x: 0
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4dbeb8dfea876a780800000000000000
-      internalID: -8672111339481863212
+      spriteID: a892ce5e1eed78049b36adc2440c4226
+      internalID: -751030046
       vertices: []
       indices: 
       edges: []
@@ -219,19 +219,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 24
-        y: 3
-        width: 16
-        height: 15
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e4013eda4eff9ede0800000000000000
-      internalID: -1303229259512082354
+      spriteID: 45fdffb51b58b634d928d66360d592c4
+      internalID: 1786855802
       vertices: []
       indices: 
       edges: []
@@ -240,20 +240,20 @@ TextureImporter:
       name: Enemy_Flying_Death_24x24_2
       rect:
         serializedVersion: 2
-        x: 39
-        y: 5
-        width: 8
-        height: 8
+        x: 48
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8bc09c90f7c3ca130800000000000000
-      internalID: 3579302320175385784
+      spriteID: 5666c4f3077770141bdad89a7be84f14
+      internalID: 952873995
       vertices: []
       indices: 
       edges: []
@@ -262,20 +262,20 @@ TextureImporter:
       name: Enemy_Flying_Death_24x24_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 1
-        width: 16
-        height: 15
+        x: 72
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 473d55e3315016b10800000000000000
-      internalID: 1972863691973317492
+      spriteID: 6adce2e0bf139d84392ec4637a3672f6
+      internalID: -1719681475
       vertices: []
       indices: 
       edges: []
@@ -284,20 +284,20 @@ TextureImporter:
       name: Enemy_Flying_Death_24x24_4
       rect:
         serializedVersion: 2
-        x: 56
-        y: 9
-        width: 8
-        height: 10
+        x: 96
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3dc252fe4e0e73e70800000000000000
-      internalID: 9094985246367362259
+      spriteID: bf7ea0280910bec478e1469183f36edc
+      internalID: -1446542164
       vertices: []
       indices: 
       edges: []
@@ -306,20 +306,20 @@ TextureImporter:
       name: Enemy_Flying_Death_24x24_5
       rect:
         serializedVersion: 2
-        x: 64
+        x: 120
         y: 0
-        width: 79
-        height: 21
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1fb64ce5c849f41f0800000000000000
-      internalID: -1058464056802513935
+      spriteID: 7e77c7f44d6624442a92fc0a3c0f34b6
+      internalID: 1351603534
       vertices: []
       indices: 
       edges: []
@@ -328,7 +328,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -336,14 +336,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":24.0,"y":24.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Enemy_Flying_Death_24x24_0: -8672111339481863212
-      Enemy_Flying_Death_24x24_1: -1303229259512082354
-      Enemy_Flying_Death_24x24_2: 3579302320175385784
-      Enemy_Flying_Death_24x24_3: 1972863691973317492
-      Enemy_Flying_Death_24x24_4: 9094985246367362259
-      Enemy_Flying_Death_24x24_5: -1058464056802513935
+      Enemy_Flying_Death_24x24_0: -751030046
+      Enemy_Flying_Death_24x24_1: 1786855802
+      Enemy_Flying_Death_24x24_2: 952873995
+      Enemy_Flying_Death_24x24_3: -1719681475
+      Enemy_Flying_Death_24x24_4: -1446542164
+      Enemy_Flying_Death_24x24_5: 1351603534
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

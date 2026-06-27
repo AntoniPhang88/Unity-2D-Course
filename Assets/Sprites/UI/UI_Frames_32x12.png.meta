@@ -8,9 +8,6 @@ TextureImporter:
   - first:
       213: 3694825829583351386
     second: UI_Frames_32x12_1
-  - first:
-      213: 4900816463175144924
-    second: UI_Frames_32x12_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -188,7 +185,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 23
+        y: 11
         width: 32
         height: 25
       alignment: 0
@@ -210,7 +207,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 12
+        y: 0
         width: 32
         height: 12
       alignment: 0
@@ -223,28 +220,6 @@ TextureImporter:
       bones: []
       spriteID: a5ee0471488a64330800000000000000
       internalID: 3694825829583351386
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Frames_32x12_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd5d0fc8b92330440800000000000000
-      internalID: 4900816463175144924
       vertices: []
       indices: 
       edges: []
@@ -265,7 +240,6 @@ TextureImporter:
     nameFileIdTable:
       UI_Frames_32x12_0: 8627226160112593364
       UI_Frames_32x12_1: 3694825829583351386
-      UI_Frames_32x12_2: 4900816463175144924
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

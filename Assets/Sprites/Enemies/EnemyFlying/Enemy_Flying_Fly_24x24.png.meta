@@ -46,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -190,20 +190,20 @@ TextureImporter:
       name: Enemy_Flying_Fly_24x24_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 4
-        width: 21
-        height: 13
+        x: 0
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 68568c196d462b260800000000000000
-      internalID: 7111857634303042950
+      spriteID: 0c28fbd5f4b6f9a4996c97af8f9fea8f
+      internalID: 291875690
       vertices: []
       indices: 
       edges: []
@@ -212,20 +212,20 @@ TextureImporter:
       name: Enemy_Flying_Fly_24x24_1
       rect:
         serializedVersion: 2
-        x: 25
-        y: 3
-        width: 22
-        height: 16
+        x: 24
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7835d706273717580800000000000000
-      internalID: -8831150459214539897
+      spriteID: c08092085c2dddf429c80c126f007081
+      internalID: 1775628509
       vertices: []
       indices: 
       edges: []
@@ -234,20 +234,20 @@ TextureImporter:
       name: Enemy_Flying_Fly_24x24_2
       rect:
         serializedVersion: 2
-        x: 51
-        y: 2
-        width: 18
-        height: 17
+        x: 48
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 509db235299de51b0800000000000000
-      internalID: -5665852058701670139
+      spriteID: 0bff3f4b9063ef04f8e7647c9fb06b48
+      internalID: 662666075
       vertices: []
       indices: 
       edges: []
@@ -256,20 +256,20 @@ TextureImporter:
       name: Enemy_Flying_Fly_24x24_3
       rect:
         serializedVersion: 2
-        x: 75
-        y: 2
-        width: 16
-        height: 16
+        x: 72
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f6bbc04035afdda80800000000000000
-      internalID: -8440314892165268625
+      spriteID: ab956f968da6b2f4eb216abc665170d8
+      internalID: -874121718
       vertices: []
       indices: 
       edges: []
@@ -278,7 +278,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +286,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":24.0,"y":24.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Enemy_Flying_Fly_24x24_0: 7111857634303042950
-      Enemy_Flying_Fly_24x24_1: -8831150459214539897
-      Enemy_Flying_Fly_24x24_2: -5665852058701670139
-      Enemy_Flying_Fly_24x24_3: -8440314892165268625
+      Enemy_Flying_Fly_24x24_0: 291875690
+      Enemy_Flying_Fly_24x24_1: 1775628509
+      Enemy_Flying_Fly_24x24_2: 662666075
+      Enemy_Flying_Fly_24x24_3: -874121718
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
