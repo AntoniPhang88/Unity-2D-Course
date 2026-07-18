@@ -267,13 +267,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1631111159}
   - component: {fileID: 1631111161}
-  - component: {fileID: 1631111163}
   - component: {fileID: 1631111160}
-  - component: {fileID: 1631111162}
   - component: {fileID: 1631111158}
   - component: {fileID: 1631111157}
   - component: {fileID: 1631111156}
-  - component: {fileID: 1631111164}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -473,56 +470,6 @@ MonoBehaviour:
   m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1631111162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631111155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dea2d2c688cace44c9ce4e3807244e26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::IdleAbility
-  thisAbilityState: 0
-  isPermitted: 1
---- !u!114 &1631111163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631111155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77e7b52621046b546864c9179a185e92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player
-  gatherInput: {fileID: 1631111160}
-  anim: {fileID: 1631111164}
---- !u!95 &1631111164
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631111155}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bc3eaacc5e0a40b45b4944695f77e6e2, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1718585603
 GameObject:
   m_ObjectHideFlags: 0
