@@ -3,9 +3,11 @@ public class Player : MonoBehaviour
 {
     public GatherInput gatherInput;
     public StateMachine stateMachine;
+    public PhysicsControl physicsControl;
     public Animator anim;
 
     private BaseAbility[] playerAbilities;
+    public bool facingRight = true;
 
     private void Awake()
     {
@@ -24,6 +26,7 @@ public class Player : MonoBehaviour
             }
             ability.UpdateAnimator();
         }
+        Debug.Log("Current state is :" + stateMachine.currentState);
     }
 
     private void FixedUpdate()
@@ -34,6 +37,20 @@ public class Player : MonoBehaviour
             {
                 ability.ProcessFixedAbility();
             }
+        }
+    }
+
+    public void Flip()
+    {
+        if(facingRight == true && gatherInput.horizontalInput < 0)
+        {
+            transform.Rotate(0, 180, 0);
+            facingRight = !facingRight;
+        }
+        else if (facingRight == false && gatherInput.horizontalInput > 0)
+        {
+            transform.Rotate(0, 180, 0);
+            facingRight = !facingRight;
         }
     }
 }

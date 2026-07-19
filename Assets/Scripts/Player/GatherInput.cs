@@ -8,21 +8,18 @@ public class GatherInput : MonoBehaviour
     private InputActionMap playerMap;
     private InputActionMap uiMap;
 
-    public InputActionReference jumpActionRef;
     public InputActionReference moveActionRef;
 
-    private float horizontalInput;
+    [HideInInspector]
+    public float horizontalInput;
 
     private void OnEnable()
     {
-        jumpActionRef.action.performed += TryJump;
-        jumpActionRef.action.canceled += StopJump;
+
     }
 
     private void OnDisable()
     {
-        jumpActionRef.action.performed -= TryJump;
-        jumpActionRef.action.canceled -= StopJump;
         playerMap.Disable();
     }
 
