@@ -6,7 +6,18 @@ public class StateMachine
 
     public void ChangeState(PlayerStates.State newState)
     {
-        foreach(BaseAbility ability in arrayOfAbilities)
+        foreach (BaseAbility ability in arrayOfAbilities)
+        {
+            if (ability.thisAbilityState == newState)
+            {
+                if (!ability.isPermitted)
+                {
+                    return;
+                }
+            }
+        }
+
+        foreach (BaseAbility ability in arrayOfAbilities)
         {
             if(ability.thisAbilityState == currentState)
             {
