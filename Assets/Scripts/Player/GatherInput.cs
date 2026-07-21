@@ -9,9 +9,12 @@ public class GatherInput : MonoBehaviour
     private InputActionMap uiMap;
 
     public InputActionReference moveActionRef;
+    public InputActionReference verticalActionRef;
 
     [HideInInspector]
     public float horizontalInput;
+    [HideInInspector]
+    public float verticalInput;
 
     private void OnEnable()
     {
@@ -49,6 +52,7 @@ public class GatherInput : MonoBehaviour
     void Update()
     {
         horizontalInput = moveActionRef.action.ReadValue<float>();
+        verticalInput = verticalActionRef.action.ReadValue<float>();
         Debug.Log("Horizontal Input Value : " + horizontalInput);
     }
 }

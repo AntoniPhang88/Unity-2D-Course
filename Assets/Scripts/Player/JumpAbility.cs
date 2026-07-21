@@ -64,6 +64,15 @@ public class JumpAbility : BaseAbility
     {
         if(!isPermitted) return;
 
+        if(linkedStateMachine.currentState == PlayerStates.State.Ladders)
+        {
+            linkedStateMachine.ChangeState(PlayerStates.State.Jump);
+            //linkedPhysics.EnableGravity();
+            linkedPhysics.rb.linearVelocity = new Vector2(airSpeed * linkedInput.horizontalInput, 0); //jumpForce
+            minimumAirTime = startMinimumAirTime;
+            return;
+        }
+
         if(linkedPhysics.grounded)
         {
             linkedStateMachine.ChangeState(PlayerStates.State.Jump);
