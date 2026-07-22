@@ -4,6 +4,10 @@ public class PhysicsControl : MonoBehaviour
 {
     public Rigidbody2D rb;
 
+    [Header("Coyote Time")]
+    [SerializeField] private float coyoteSetTime;
+    public float coyoteTimer;
+
     [Header("Ground")]
     [SerializeField] private float groundRayDistance;
     [SerializeField] private Transform leftGroundPoint;
@@ -34,9 +38,15 @@ public class PhysicsControl : MonoBehaviour
     [SerializeField] private Collider2D crounchColl;
 
     private float gravityValue;
+
+    public float GetGravity()
+    {
+        return gravityValue;
+    }
     void Start()
     {
         gravityValue = rb.gravityScale;
+        coyoteTimer = coyoteSetTime;
     }
     private void OnDrawGizmos()
     {
@@ -102,6 +112,18 @@ public class PhysicsControl : MonoBehaviour
     {
         crounchColl.enabled = true;
         standColl.enabled = false;
+    }
+
+    private void Update()
+    {
+        if(!grounded)
+        {
+            coyoteTimer -= Time.deltaTime;
+        }
+        else
+        {
+            coyoteTimer = coyoteSetTime;
+        }
     }
 
     private void FixedUpdate()
