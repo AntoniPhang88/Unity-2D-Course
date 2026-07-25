@@ -44,7 +44,7 @@ public class CrouchAbility : BaseAbility
 
     private void TryToCrouch(InputAction.CallbackContext value)
     {
-        if (!isPermitted)
+        if (!isPermitted || linkedStateMachine.currentState == PlayerStates.State.KnockBack)
             return;
         if (linkedPhysics.grounded == false ||
             linkedStateMachine.currentState == PlayerStates.State.Dash ||

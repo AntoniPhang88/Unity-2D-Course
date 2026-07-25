@@ -35,7 +35,7 @@ public class DashAbility : BaseAbility
 
     private void TryDash(InputAction.CallbackContext value)
     {
-        if (!isPermitted)
+        if (!isPermitted || linkedStateMachine.currentState == PlayerStates.State.KnockBack)
             return;
 
         //other conditions

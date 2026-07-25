@@ -87,7 +87,7 @@ public class VariableJumpAbility : BaseAbility
 
     private void TryJump(InputAction.CallbackContext value)
     {
-        if (!isPermitted) return;
+        if (!isPermitted || linkedStateMachine.currentState == PlayerStates.State.KnockBack) return;
 
         if (linkedStateMachine.currentState == PlayerStates.State.Ladders)
         {
