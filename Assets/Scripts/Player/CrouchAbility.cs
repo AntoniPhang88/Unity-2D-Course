@@ -34,17 +34,19 @@ public class CrouchAbility : BaseAbility
     public override void EnterAbility()
     {
         linkedPhysics.CrounchColliders();
+        player.playerStats.EnableStatsCrouchCol();
     }
 
     public override void ExitAbility()
     {
         wantToStop = false;
         linkedPhysics.StandColliders();
+        player.playerStats.EnableStatsStandCol();
     }
 
     private void TryToCrouch(InputAction.CallbackContext value)
     {
-        if (!isPermitted || linkedStateMachine.currentState == PlayerStates.State.KnockBack)
+        if (!isPermitted || linkedStateMachine.currentState == PlayerStates.State.KnockBack || linkedStateMachine.currentState == PlayerStates.State.Death)
             return;
         if (linkedPhysics.grounded == false ||
             linkedStateMachine.currentState == PlayerStates.State.Dash ||

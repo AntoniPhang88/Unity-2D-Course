@@ -26,16 +26,25 @@ public class DashAbility : BaseAbility
         dashActionRef.action.performed -= TryDash;
     }
 
+    public override void EnterAbility()
+    {
+        //player.playerStats.DisableDamage();
+        player.playerStats.DisableStatsCollider();
+    }
+
     public override void ExitAbility()
     {
         linkedPhysics.EnableGravity();
         //optional
         linkedPhysics.ResetVelocity();
+
+        //player.playerStats.EnableDamage();
+        player.playerStats.EnableStatsCollider();
     }
 
     private void TryDash(InputAction.CallbackContext value)
     {
-        if (!isPermitted || linkedStateMachine.currentState == PlayerStates.State.KnockBack)
+        if (!isPermitted || linkedStateMachine.currentState == PlayerStates.State.KnockBack || linkedStateMachine.currentState == PlayerStates.State.Death)
             return;
 
         //other conditions

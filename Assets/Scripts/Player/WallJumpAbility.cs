@@ -25,7 +25,7 @@ public class WallJumpAbility : BaseAbility
 
     private void TryToWallJump(InputAction.CallbackContext value)
     {
-        if(!isPermitted || linkedStateMachine.currentState == PlayerStates.State.KnockBack)
+        if(!isPermitted || linkedStateMachine.currentState == PlayerStates.State.KnockBack || linkedStateMachine.currentState == PlayerStates.State.Death)
             return;
         if(EvaluateWallJumpConditions())
         {

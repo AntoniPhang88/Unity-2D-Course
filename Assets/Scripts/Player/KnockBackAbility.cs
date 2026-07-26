@@ -9,8 +9,25 @@ public class KnockBackAbility : BaseAbility
     {
         currentKnockBack = null;
     }
+
+    public void StartSwingKnockBack(float duration, Vector2 force, int direction)
+    {
+        if (player.playerStats.GetCanTakeDamage() == false)
+            return;
+
+        if(currentKnockBack == null)
+        {
+            currentKnockBack = StartCoroutine(SwingKnockBack(duration, force, direction));
+        }
+        else
+        {
+
+        }
+    }
     public void StartKnockBack(float duration, Vector2 force, Transform enemyObject)
     {
+        if (player.playerStats.GetCanTakeDamage() == false)
+            return;
         if(currentKnockBack == null)
         {
             currentKnockBack = StartCoroutine(KnockBack(duration, force, enemyObject));
@@ -40,7 +57,7 @@ public class KnockBackAbility : BaseAbility
         }
         else
         {
-            linkedPhysics.rb.linearVelocity = new Vector2(--force.x, force.y);
+            linkedPhysics.rb.linearVelocity = new Vector2(-force.x, force.y);
         }
         yield return new WaitForSeconds(duration);
         //return to other states
@@ -49,6 +66,41 @@ public class KnockBackAbility : BaseAbility
             if(linkedPhysics.grounded)
             {
                 if(linkedInput.horizontalInput != 0)
+                {
+                    linkedStateMachine.ChangeState(PlayerStates.State.Run);
+                }
+                else
+                {
+                    linkedStateMachine.ChangeState(PlayerStates.State.Idle);
+                }
+            }
+            else
+            {
+                linkedStateMachine.ChangeState(PlayerStates.State.Jump);
+            }
+        }
+        else
+        {
+            linkedStateMachine.ChangeState(PlayerStates.State.Death);
+        }
+    }
+
+    public IEnumerator SwingKnockBack(float duration, Vector2 force, int direction)
+    {
+        linkedStateMachine.ChangeState(PlayerStates.State.KnockBack);
+        linkedPhysics.ResetVelocity();
+
+        force.x *= direction;
+        linkedPhysics.rb.linearVelocity = force;
+
+        yield return new WaitForSeconds(duration);
+
+        //return to other states
+        if (player.playerStats.GetCurrentHealth() > 0)
+        {
+            if (linkedPhysics.grounded)
+            {
+                if (linkedInput.horizontalInput != 0)
                 {
                     linkedStateMachine.ChangeState(PlayerStates.State.Run);
                 }
