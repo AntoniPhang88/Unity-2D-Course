@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class Gate : MonoBehaviour
 {
     [SerializeField] private string levelToLoad;

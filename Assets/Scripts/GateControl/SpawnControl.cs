@@ -8,7 +8,7 @@ public class SpawnControl : MonoBehaviour
 
     void Start()
     {
-        //SaveLoadManager.instance.DeleteFolder(SaveLoadManager.instance.folderName);
+        SaveLoadManager.instance.DeleteFolder(SaveLoadManager.instance.folderName);
         player = FindAnyObjectByType<Player>().transform;
         SaveLoadManager.instance.Load(spawnData, SaveLoadManager.instance.folderName, SaveLoadManager.instance.fileName);
         foreach(SpawnIdentifier spawnID in spawnPoints)

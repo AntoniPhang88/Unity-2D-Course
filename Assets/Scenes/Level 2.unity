@@ -1103,25 +1103,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1558515701753953460, guid: 03fe91e55ae49db448eec6a2bfa01aba, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.47
-      objectReference: {fileID: 0}
-    - target: {fileID: 1558515701753953460, guid: 03fe91e55ae49db448eec6a2bfa01aba, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.49
-      objectReference: {fileID: 0}
     - target: {fileID: 2828734613970958830, guid: 03fe91e55ae49db448eec6a2bfa01aba, type: 3}
       propertyPath: m_Name
       value: SpawnControl
-      objectReference: {fileID: 0}
-    - target: {fileID: 6319063112385036758, guid: 03fe91e55ae49db448eec6a2bfa01aba, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 23.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 6319063112385036758, guid: 03fe91e55ae49db448eec6a2bfa01aba, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
