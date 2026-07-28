@@ -8,6 +8,9 @@ public class SaveLoadManager : MonoBehaviour
     public string folderName = "SaveFiles";
     public string fileName = "SpawnPoint.json";
 
+    [Header("Checkpoint")]
+    public string fileCheckpoint = "CheckPoint.json";
+
     private void Awake()
     {
         if(instance == null)
