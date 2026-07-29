@@ -50,15 +50,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "ActivateCheckpoint",
-                    "type": "Button",
-                    "id": "b3da10bb-22e8-4641-9ca9-79cf8fa8096f",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -400,17 +391,6 @@
                     "processors": "",
                     "groups": ";Controller",
                     "action": "Crouch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "581cc438-b977-4c5a-923a-8f87a371ad49",
-                    "path": "<Keyboard>/t",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard",
-                    "action": "ActivateCheckpoint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
