@@ -16,3 +16,19 @@ public class SpawnData
         facingRight = true;
     }
 }
+[System.Serializable]
+public class CheckpointData
+{
+    public string sceneToLoad;
+    public string checkPointKey;
+    public bool facingRight;
+    
+    public CheckpointData()
+    {
+        sceneToLoad = "Level 1";
+        checkPointKey = "Check1";
+        facingRight = true;
+
+    }
+}
+

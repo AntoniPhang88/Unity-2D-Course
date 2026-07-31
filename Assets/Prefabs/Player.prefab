@@ -54,6 +54,7 @@ GameObject:
   - component: {fileID: 6581921328183018285}
   - component: {fileID: 7209986544817543825}
   - component: {fileID: 1294523011868724010}
+  - component: {fileID: 1033059527772527762}
   - component: {fileID: 627792938423237452}
   - component: {fileID: 5109297464824026452}
   - component: {fileID: 6979749081604601539}
@@ -344,6 +345,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DeathAbility
   thisAbilityState: 11
   isPermitted: 1
+--- !u!114 &1033059527772527762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561099672862420054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400b470d88f21b3419c79c68d5b75661, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivateCheckpoint
+  ActiveCheck: {fileID: -477954977168729540, guid: 484bd245192c1344c8cc113b42c6dbe1, type: 3}
+  checkPoint: {fileID: 0}
 --- !u!212 &627792938423237452
 SpriteRenderer:
   serializedVersion: 2
