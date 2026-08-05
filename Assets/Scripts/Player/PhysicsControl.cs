@@ -37,6 +37,10 @@ public class PhysicsControl : MonoBehaviour
     [SerializeField] private Collider2D standColl;
     [SerializeField] private Collider2D crounchColl;
 
+    [Header("Interpolation")]
+    public RigidbodyInterpolation2D interpolate;
+    public RigidbodyInterpolation2D extrapolate;
+
     private float gravityValue;
 
     public float GetGravity()
@@ -87,6 +91,15 @@ public class PhysicsControl : MonoBehaviour
         return false;
     }
 
+    public void SetInterpolate()
+    {
+        rb.interpolation = interpolate;
+    }
+
+    public void SetExtrapolate()
+    {
+        rb.interpolation = extrapolate;
+    }
     public void DisableGravity()
     {
         rb.gravityScale = 0f;

@@ -184,6 +184,8 @@ MonoBehaviour:
   ceilingDetected: 0
   standColl: {fileID: 6979749081604601539}
   crounchColl: {fileID: 5624634057993470720}
+  interpolate: 1
+  extrapolate: 2
 --- !u!114 &2518572913107076740
 MonoBehaviour:
   m_ObjectHideFlags: 0
