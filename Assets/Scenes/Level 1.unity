@@ -12579,6 +12579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ladders
       objectReference: {fileID: 0}
+    - target: {fileID: 3546044412920818502, guid: 5e57c571e65d00b4a9e2c93e2751f0bc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9206191888961866957, guid: 5e57c571e65d00b4a9e2c93e2751f0bc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.48
