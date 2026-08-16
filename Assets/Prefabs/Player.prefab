@@ -84,9 +84,9 @@ Transform:
   - {fileID: 6000993126084655604}
   - {fileID: 1584201881499973093}
   - {fileID: 7622105513352059092}
+  - {fileID: 8901593902719398950}
   - {fileID: 6253833232562308549}
   - {fileID: 8901593902719398948}
-  - {fileID: 8901593902719398950}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2820716095418038582
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
+  m_DefaultActionMap: MinimapControls
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &682952891487450158
@@ -176,7 +176,7 @@ MonoBehaviour:
     m_Bits: 64
   grounded: 0
   wallRayDistance: 0.05
-  wallCheckPointUpper: {fileID: 0}
+  wallCheckPointUpper: {fileID: 8901593902719398950}
   wallCheckPointLower: {fileID: 7622105513352059092}
   wallDetected: 0
   ceilingRayDistance: 0.41
