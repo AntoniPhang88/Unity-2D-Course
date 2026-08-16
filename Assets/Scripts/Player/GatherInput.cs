@@ -7,8 +7,6 @@ public class GatherInput : MonoBehaviour
 
     private InputActionMap playerMap;
     private InputActionMap uiMap;
-    private InputActionMap miniMap;
-    private InputActionMap activatorMap;
 
     public InputActionReference moveActionRef;
     public InputActionReference verticalActionRef;
@@ -44,10 +42,8 @@ public class GatherInput : MonoBehaviour
         //Mengikuti action maps name pada control input
         playerMap = playerInput.actions.FindActionMap("Player");
         uiMap = playerInput.actions.FindActionMap("UI");
-        miniMap = playerInput.actions.FindActionMap("MinimapControls");
-        activatorMap = playerInput.actions.FindActionMap("Activators");
+
         playerMap.Enable();
-        activatorMap.Enable();
         //playerInput.actions.Enable();
         //jumpActionRef.action.Disable();
     }
@@ -57,20 +53,9 @@ public class GatherInput : MonoBehaviour
     {
         horizontalInput = moveActionRef.action.ReadValue<float>();
         verticalInput = verticalActionRef.action.ReadValue<float>();
-        //Debug.Log("Horizontal Input Value : " + horizontalInput);
+        Debug.Log("Horizontal Input Value : " + horizontalInput);
     }
-    public void EnableMinimap()
-    {
-        miniMap.Enable();
-    }
-    public void DisableMinimap()
-    {
-        miniMap.Disable();
-    }
-    public void EnablePlayerMap()
-    {
-        playerMap.Enable();
-    }
+
     public void DisablePlayerMap()
     {
         playerMap.Disable();
