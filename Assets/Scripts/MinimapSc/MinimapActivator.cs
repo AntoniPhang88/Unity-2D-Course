@@ -19,7 +19,7 @@ public class MinimapActivator : MonoBehaviour
     private void OnDisable()
     {
         minimapActivatorRef.action.performed -= TryToOpenMinimap;
-    }
+    } 
     private void TryToOpenMinimap(InputAction.CallbackContext value)
     {
         if(mapActivated)
