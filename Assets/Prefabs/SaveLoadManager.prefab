@@ -44,3 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5de579919e6027e4b882befe13af4d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SaveLoadManager
+  folderName: SaveFiles
+  fileName: SpawnPoint.json
+  fileCheckPoint: Checkpoint.json
+  minimapFilename: Minimap.json

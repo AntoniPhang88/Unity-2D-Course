@@ -233,7 +233,7 @@ MonoBehaviour:
   thisAbilityState: 4
   isPermitted: 1
   wallJumpActionRef: {fileID: -9049273088648801266, guid: 484bd245192c1344c8cc113b42c6dbe1, type: 3}
-  wallJumpForce: {x: 8, y: 10}
+  wallJumpForce: {x: 8, y: 12}
   wallJumpMaxTime: 1
 --- !u!114 &2584198654571350759
 MonoBehaviour:

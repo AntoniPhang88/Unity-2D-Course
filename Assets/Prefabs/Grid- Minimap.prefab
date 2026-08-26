@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 8290242928761680395}
   - component: {fileID: 2441368192022299710}
   - component: {fileID: 2203471480131398801}
+  - component: {fileID: 8015047481591168416}
   m_Layer: 13
   m_Name: Level1 Minimap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8290242928761680395
 Transform:
   m_ObjectHideFlags: 0
@@ -3035,6 +3036,19 @@ TilemapRenderer:
   m_SortOrder: 0
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
+--- !u!114 &8015047481591168416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401344708244508128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b3bdcfd861d3b47be625a5b3534e4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MinimapID
+  mapKey: L1
 --- !u!1 &3291067791396828155
 GameObject:
   m_ObjectHideFlags: 0
@@ -3045,6 +3059,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3162369601096417994}
   - component: {fileID: 9078418684566782430}
+  - component: {fileID: 407700626495820337}
   m_Layer: 0
   m_Name: Grid- Minimap
   m_TagString: Untagged
@@ -3082,6 +3097,25 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!114 &407700626495820337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3291067791396828155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1223d3fed27c25d4b9313cae735b621b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MinimapDisplayControl
+  firstMinimapToReveal: L1
+  minimapIDs:
+  - {fileID: 8015047481591168416}
+  - {fileID: 5243124424005156753}
+  - {fileID: 5824555657925054789}
+  minimapData:
+    mapKeys: []
 --- !u!1 &3383145785474849929
 GameObject:
   m_ObjectHideFlags: 0
@@ -3093,13 +3127,14 @@ GameObject:
   - component: {fileID: 487155242651594690}
   - component: {fileID: 16196319428291629}
   - component: {fileID: 7613458516705549158}
+  - component: {fileID: 5824555657925054789}
   m_Layer: 13
   m_Name: Level3 Minimap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &487155242651594690
 Transform:
   m_ObjectHideFlags: 0
@@ -6427,6 +6462,19 @@ TilemapRenderer:
   m_SortOrder: 0
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
+--- !u!114 &5824555657925054789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3383145785474849929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b3bdcfd861d3b47be625a5b3534e4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MinimapID
+  mapKey: L3
 --- !u!1 &6304910013891770405
 GameObject:
   m_ObjectHideFlags: 0
@@ -6438,13 +6486,14 @@ GameObject:
   - component: {fileID: 727271966362072311}
   - component: {fileID: 2421479190498673976}
   - component: {fileID: 3521560265790159175}
+  - component: {fileID: 5243124424005156753}
   m_Layer: 13
   m_Name: Level2 Minimap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &727271966362072311
 Transform:
   m_ObjectHideFlags: 0
@@ -9812,3 +9861,16 @@ TilemapRenderer:
   m_SortOrder: 0
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
+--- !u!114 &5243124424005156753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6304910013891770405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b3bdcfd861d3b47be625a5b3534e4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MinimapID
+  mapKey: L2

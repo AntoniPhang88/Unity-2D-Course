@@ -1,3 +1,6 @@
+using NUnit.Framework;
+using System.Collections.Generic;
+
 [System.Serializable]
 public class ExampleData
 {
@@ -31,4 +34,17 @@ public class CheckpointData
 
     }
 }
+[System.Serializable]
+public class MinimapData
+{
+    public List<string> mapKeys = new List<string>();
+
+    public void AddToListWithCheck(string KeyToAdd)
+    {
+        if (mapKeys.Contains(KeyToAdd))
+            return;
+        mapKeys.Add(KeyToAdd);
+    }
+}
+
 

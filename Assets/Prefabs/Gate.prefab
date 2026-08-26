@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1094319981009355907}
+  - component: {fileID: 2231473081137382671}
   - component: {fileID: 3903869542403916420}
   - component: {fileID: 4421570793523691713}
   - component: {fileID: 6950961425714065273}
@@ -34,6 +35,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2231473081137382671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4998780360876776655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6b1b3d159893642888d95f15431d96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MapReveal
+  mapKey: L2
 --- !u!61 &3903869542403916420
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -93,6 +107,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gate
   levelToLoad: Level 2
+  spawnDataForOtherLevel:
+    spawnPointKey: Start
+    facingRight: 1
 --- !u!50 &6950961425714065273
 Rigidbody2D:
   serializedVersion: 5
