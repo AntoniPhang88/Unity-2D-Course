@@ -10,6 +10,13 @@ public class Player : MonoBehaviour
     private BaseAbility[] playerAbilities;
     public bool facingRight = true;
 
+    [Header("Current Weapon")]
+    public GameObject currentWeaponPrefab;
+    public ItemType currentWeaponType;
+
+    [Header("Primary Weapon")]
+    public GameObject primaryWeaponPrefab;
+
     private void Awake()
     {
         stateMachine = new StateMachine();
