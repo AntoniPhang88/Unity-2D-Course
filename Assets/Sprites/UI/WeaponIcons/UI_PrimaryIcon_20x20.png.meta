@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 6d12ac1eba12e1448b35f5e45f83917f
+guid: 3e1a70b8213ff4747a461a84ef121616
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8627226160112593364
-    second: UI_Frames_32x12_0
+      213: -6683278251990477859
+    second: UI_PrimaryIcon_20x20_0
   - first:
-      213: 3694825829583351386
-    second: UI_Frames_32x12_1
+      213: 5703387910114513885
+    second: UI_PrimaryIcon_20x20_1
   - first:
-      213: 4900816463175144924
-    second: UI_Frames_32x12_2
+      213: 4967113926678960096
+    second: UI_PrimaryIcon_20x20_2
+  - first:
+      213: 2792980086673644569
+    second: UI_PrimaryIcon_20x20_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -184,67 +187,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_Frames_32x12_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 23
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d9e77ecb701ab770800000000000000
-      internalID: 8627226160112593364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Frames_32x12_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 12
-        width: 32
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a5ee0471488a64330800000000000000
-      internalID: 3694825829583351386
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Frames_32x12_2
+      name: UI_PrimaryIcon_20x20_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 13
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cd5d0fc8b92330440800000000000000
-      internalID: 4900816463175144924
+      spriteID: b53ded2405f46d944a54212e21dfeb64
+      internalID: 1512695145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_PrimaryIcon_20x20_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3256175dd4b2b9a4786252b024c98fef
+      internalID: 334625923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_PrimaryIcon_20x20_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fae1f22d6f0f2b45852db6f2e252165
+      internalID: -141914712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_PrimaryIcon_20x20_3
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc2a32d23f88fa458887a26cc17f8ae
+      internalID: -17337159
       vertices: []
       indices: 
       edges: []
@@ -253,7 +278,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -261,11 +286,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: False
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":20.0,"y":20.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      UI_Frames_32x12_0: 8627226160112593364
-      UI_Frames_32x12_1: 3694825829583351386
-      UI_Frames_32x12_2: 4900816463175144924
+      UI_PrimaryIcon_20x20_0: 1512695145
+      UI_PrimaryIcon_20x20_1: 334625923
+      UI_PrimaryIcon_20x20_2: -141914712
+      UI_PrimaryIcon_20x20_3: -17337159
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

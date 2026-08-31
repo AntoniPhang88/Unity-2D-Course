@@ -17,6 +17,7 @@ public class Weapon : MonoBehaviour
     public Transform shootingPoint;
     public Transform shellSpawnPoint;
     public GameObject shellPrefab;
+    public Sprite weaponIconSprite;
 
     public float visibleLineTime;
 }

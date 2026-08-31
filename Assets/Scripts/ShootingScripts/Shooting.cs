@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -20,6 +21,8 @@ public class Shooting : MonoBehaviour
     private Vector3 startPoint;
     private Vector3 endPoint;
 
+    public static Action<Sprite, int, int, int> OnUpdateAllInfo;
+    public static Action<int, int, int> OnUpdateAmmo;
     private void Awake()
     {
         player = GetComponent<Player>();
@@ -28,6 +31,7 @@ public class Shooting : MonoBehaviour
     void Start()
     {
         currentWeapon = player.currentWeaponPrefab.GetComponent<Weapon>();
+        OnUpdateAllInfo?.Invoke(currentWeapon.weaponIconSprite, currentWeapon.currentAmmo, currentWeapon.maxAmmo, currentWeapon.storageAmmo);
     }
 
     private void OnEnable()
@@ -79,6 +83,12 @@ public class Shooting : MonoBehaviour
             endPoint = hitInfo.point;
             //lineRender.SetPosition(0, startPoint);
             //lineRender.SetPosition(1, endPoint);
+            IDamageable damageableObject = hitInfo.collider.GetComponent<IDamageable>();
+            if(damageableObject != null)
+            {
+                damageableObject.TakeDamage(currentWeapon.damage);
+            }
+
             Debug.Log("We Hit Something");
         }
         else
@@ -92,6 +102,8 @@ public class Shooting : MonoBehaviour
         currentWeapon.currentAmmo -= 1;
         StartCoroutine(ShootDelay());
         StartCoroutine(ResetShootingLine());
+        OnUpdateAmmo?.Invoke(currentWeapon.currentAmmo, currentWeapon.maxAmmo, currentWeapon.storageAmmo);
+
     }
 
     private IEnumerator ShootDelay()
