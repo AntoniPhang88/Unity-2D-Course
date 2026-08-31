@@ -13,6 +13,7 @@ public class PlayerStates
         Ladders,
         Ignore,
         KnockBack,
-        Death
+        Death,
+        Reload
     }
 }
