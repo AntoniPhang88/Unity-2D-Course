@@ -37,7 +37,8 @@ public class LaddersAbility : BaseAbility
             return;
         linkedAnimator.enabled = true;
         if (linkedStateMachine.currentState == PlayerStates.State.Ladders ||
-           linkedStateMachine.currentState == PlayerStates.State.Dash || !canGoOnLadder) 
+           linkedStateMachine.currentState == PlayerStates.State.Dash || !canGoOnLadder ||
+           linkedStateMachine.currentState == PlayerStates.State.Reload) 
             return;
 
         linkedStateMachine.ChangeState(PlayerStates.State.Ladders);

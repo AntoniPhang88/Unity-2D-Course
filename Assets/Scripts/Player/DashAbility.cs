@@ -48,7 +48,10 @@ public class DashAbility : BaseAbility
             return;
 
         //other conditions
-        if (linkedStateMachine.currentState == PlayerStates.State.Dash || linkedPhysics.wallDetected || linkedStateMachine.currentState == PlayerStates.State.Crouch)
+        if (linkedStateMachine.currentState == PlayerStates.State.Dash || 
+            linkedPhysics.wallDetected || 
+            linkedStateMachine.currentState == PlayerStates.State.Crouch ||
+            linkedStateMachine.currentState == PlayerStates.State.Reload)
             return;
 
         linkedStateMachine.ChangeState(PlayerStates.State.Dash);
