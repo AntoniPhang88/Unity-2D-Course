@@ -14,6 +14,11 @@ public class WallSlideAbility : BaseAbility
     public override void EnterAbility()
     {
         linkedPhysics.rb.linearVelocity = Vector2.zero;
+        player.DeactivateCurrentWeapon();
+    }
+    public override void ExitAbility()
+    {
+        player.ActiveCurrentWeapon();
     }
     public override void ProcessAbility()
     {

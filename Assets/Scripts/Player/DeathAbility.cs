@@ -6,6 +6,7 @@ public class DeathAbility : BaseAbility
 {
     public override void EnterAbility()
     {
+        player.DeactivateCurrentWeapon();
         SpawnMode.spawnFromCheckPoint = true;
         player.gatherInput.DisablePlayerMap();
         linkedPhysics.ResetVelocity();
@@ -16,6 +17,10 @@ public class DeathAbility : BaseAbility
             //if have other death animation
             linkedAnimator.SetBool("Death", true);
         }
+    }
+    public override void ExitAbility()
+    {
+        player.ActiveCurrentWeapon();
     }
     //public override void UpdateAnimator()
     //{

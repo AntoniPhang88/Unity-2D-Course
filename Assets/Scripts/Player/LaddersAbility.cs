@@ -57,12 +57,16 @@ public class LaddersAbility : BaseAbility
         linkedPhysics.ResetVelocity();
         linkedAnimator.enabled = false;
     }
-
+    public override void EnterAbility()
+    {
+        player.DeactivateCurrentWeapon();
+    }
     public override void ExitAbility()
     {
         linkedPhysics.EnableGravity();
         //climb = false;
         linkedAnimator.enabled = true;
+        player.ActiveCurrentWeapon();
     }
     public override void ProcessAbility()
     {
