@@ -17,10 +17,19 @@ public class Player : MonoBehaviour
     [Header("Primary Weapon")]
     public GameObject primaryWeaponPrefab;
 
+    [Header("Secondary Weapon")]
+    public GameObject secondaryWeaponPrefab;
+
     [Header("Weapon Positions")]
     [SerializeField] private Transform currentShootingPos;
     [SerializeField] private Transform standingShootPos;
     [SerializeField] private Transform crouchShootPos;
+    [SerializeField] private Transform upShootPos;
+
+    [Header("Secondary Weapon Positions")]
+    [SerializeField] private Transform secondStandingShootPos;
+    [SerializeField] private Transform secondCrouchShootPos;
+    [SerializeField] private Transform secondUpShootPos;
 
     private void Awake()
     {
@@ -82,6 +91,12 @@ public class Player : MonoBehaviour
             currentShootingPos = standingShootPos;
             currentWeaponPrefab.transform.position = standingShootPos.position;
         }
+        else if(currentWeaponType == ItemType.SecondaryWeapon)
+        {
+            currentShootingPos = secondStandingShootPos;
+            currentWeaponPrefab.transform.position = secondStandingShootPos.position;
+        }
+        SetWeaponRotation(0);
     }
     public void SetCrouchShootPos()
     {
@@ -90,8 +105,31 @@ public class Player : MonoBehaviour
             currentShootingPos = crouchShootPos;
             currentWeaponPrefab.transform.position = crouchShootPos.position;
         }
+        else if (currentWeaponType == ItemType.SecondaryWeapon)
+        {
+            currentShootingPos = secondCrouchShootPos;
+            currentWeaponPrefab.transform.position = secondCrouchShootPos.position;
+        }
+        SetWeaponRotation(0);
     }
-
+    public void SetUpShootPos()
+    {
+        if (currentWeaponType == ItemType.PrimaryWeapon)
+        {
+            currentShootingPos = upShootPos;
+            currentWeaponPrefab.transform.position = upShootPos.position;
+        }
+        else if (currentWeaponType == ItemType.SecondaryWeapon)
+        {
+            currentShootingPos = secondUpShootPos;
+            currentWeaponPrefab.transform.position = secondUpShootPos.position;
+        }
+        SetWeaponRotation(90);
+    }
+    private void SetWeaponRotation(float zRotation)
+    {
+        currentWeaponPrefab.transform.localEulerAngles = new Vector3(0, 0, zRotation);
+    }
     public void DeactivateCurrentWeapon()
     {
         currentWeaponPrefab.SetActive(false);

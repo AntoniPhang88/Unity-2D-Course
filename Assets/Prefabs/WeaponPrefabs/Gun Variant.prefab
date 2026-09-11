@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7410476360242383525
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 423912276327513416, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -379848890, guid: 24d59b523f23f1b4db4c1c29f96126e9, type: 3}
+    - target: {fileID: 688806712803573454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.312
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892405281227185213, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.812
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892405281227185213, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.386
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892405281227185213, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892405281227185213, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892405281227185213, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892405281227185213, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892405281227185213, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892405281227185213, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892405281227185213, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892405281227185213, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: ID
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: damage
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: itemType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: reloadTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: isAutomatic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: shootCooldown
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: visibleLineTime
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: weaponIconSprite
+      value: 
+      objectReference: {fileID: -379848890, guid: 24d59b523f23f1b4db4c1c29f96126e9, type: 3}
+    - target: {fileID: 8992466160887576596, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: m_Name
+      value: Gun Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fbd7d78397494cd4295419968a1abc72, type: 3}

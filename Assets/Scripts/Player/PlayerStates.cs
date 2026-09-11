@@ -14,6 +14,7 @@ public class PlayerStates
         Ignore,
         KnockBack,
         Death,
-        Reload
+        Reload,
+        ShootUp
     }
 }
