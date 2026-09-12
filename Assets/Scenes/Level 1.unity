@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &87248695 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4680552380210690686, guid: 8a07e50804c7a2a4cba8938e931b0b86, type: 3}
+  m_PrefabInstance: {fileID: 1027722848178620183}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ea70c26629e6944934033b1a5324a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Weapon
 --- !u!1 &105816338
 GameObject:
   m_ObjectHideFlags: 0
@@ -5820,6 +5831,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1929310884 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2331096967675411561, guid: 8a07e50804c7a2a4cba8938e931b0b86, type: 3}
+  m_PrefabInstance: {fileID: 1027722848178620183}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ea70c26629e6944934033b1a5324a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Weapon
 --- !u!4 &2069096050 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4077336182608759460, guid: cbb7b5dcb017c3143948efb0c38059be, type: 3}
@@ -12450,6 +12472,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 682952891487450158, guid: 8a07e50804c7a2a4cba8938e931b0b86, type: 3}
+      propertyPath: listToSaveAndLoad.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 682952891487450158, guid: 8a07e50804c7a2a4cba8938e931b0b86, type: 3}
+      propertyPath: 'listToSaveAndLoad.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1929310884}
+    - target: {fileID: 682952891487450158, guid: 8a07e50804c7a2a4cba8938e931b0b86, type: 3}
+      propertyPath: 'listToSaveAndLoad.Array.data[1]'
+      value: 
+      objectReference: {fileID: 87248695}
     - target: {fileID: 1561099672862420054, guid: 8a07e50804c7a2a4cba8938e931b0b86, type: 3}
       propertyPath: m_Name
       value: Player
@@ -12498,6 +12532,14 @@ PrefabInstance:
       propertyPath: minimapCanvasGroup
       value: 
       objectReference: {fileID: 480069946}
+    - target: {fileID: 7764764283150875796, guid: 8a07e50804c7a2a4cba8938e931b0b86, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.772
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764764283150875796, guid: 8a07e50804c7a2a4cba8938e931b0b86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.314
+      objectReference: {fileID: 0}
     - target: {fileID: 8157892610333302109, guid: 8a07e50804c7a2a4cba8938e931b0b86, type: 3}
       propertyPath: healthBarControl
       value: 

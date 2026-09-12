@@ -490,6 +490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shooting
   shootActionRef: {fileID: -451320559478462185, guid: 484bd245192c1344c8cc113b42c6dbe1, type: 3}
+  changeWeaponRef: {fileID: 4073681956715384553, guid: 484bd245192c1344c8cc113b42c6dbe1, type: 3}
   currentWeapon: {fileID: 0}
   whatToHit:
     serializedVersion: 2
@@ -576,7 +577,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1063083009, guid: 3306e6e74c9436c4ca42a4112debdc17, type: 3}
+  m_Sprite: {fileID: 1279276719, guid: 4532f66720d537748889b45857e76720, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1670,6 +1671,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gun
       objectReference: {fileID: 0}
+    - target: {fileID: 1881630158746677937, guid: 9ddd15160b3a9a74d97773ad2391adb1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2680235867161220760, guid: 9ddd15160b3a9a74d97773ad2391adb1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.812
@@ -1852,7 +1857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8992466160887576596, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

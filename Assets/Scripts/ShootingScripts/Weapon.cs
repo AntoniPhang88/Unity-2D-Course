@@ -25,6 +25,8 @@ public class Weapon : MonoBehaviour
 
     public float visibleLineTime;
 
+    [SerializeField]
+    private WeaponData weaponData = new WeaponData();
     public bool ReloadCheck()
     {
         int neededAmmo = maxAmmo - currentAmmo;
@@ -39,5 +41,21 @@ public class Weapon : MonoBehaviour
         currentAmmo += ammoToReload;
         storageAmmo -= ammoToReload;
         isReloading = false;
+    }
+    public void SaveWeaponData()
+    {
+        weaponData.ID = ID;
+        weaponData.currentAmmo = currentAmmo;
+        weaponData.storageAmmo = storageAmmo;
+        SaveLoadManager.instance.Save(weaponData, SaveLoadManager.instance.folderName, ID + ".json");
+    }
+    public void LoadWeaponData()
+    {
+        SaveLoadManager.instance.Load(weaponData, SaveLoadManager.instance.folderName, ID + ".json");
+        if(weaponData.ID != "")
+        {
+            currentAmmo = weaponData.currentAmmo;
+            storageAmmo = weaponData.storageAmmo;
+        }
     }
 }

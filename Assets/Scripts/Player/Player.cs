@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 public class Player : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Player : MonoBehaviour
 
     [Header("Current Weapon")]
     public GameObject currentWeaponPrefab;
+
     public ItemType currentWeaponType;
 
     [Header("Primary Weapon")]
@@ -31,6 +33,8 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform secondCrouchShootPos;
     [SerializeField] private Transform secondUpShootPos;
 
+    public List<Weapon> listToSaveAndLoad = new List<Weapon>();
+
     private void Awake()
     {
         stateMachine = new StateMachine();
@@ -38,6 +42,14 @@ public class Player : MonoBehaviour
         playerStats = GetComponentInChildren<PlayerStats>();
         stateMachine.arrayOfAbilities = playerAbilities;
         currentShootingPos = standingShootPos;
+    }
+
+    private void OnDisable()
+    {
+        foreach(Weapon weapon in listToSaveAndLoad)
+        {
+            weapon.SaveWeaponData();
+        }
     }
 
     private void Update()
@@ -83,7 +95,21 @@ public class Player : MonoBehaviour
         transform.Rotate(0, 180, 0);
         facingRight = !facingRight;
     }
-
+    public void SetWeaponPosition()
+    {
+        if(stateMachine.currentState == PlayerStates.State.Crouch)
+        {
+            SetCrouchShootPos();
+        }
+        else if (stateMachine.currentState == PlayerStates.State.ShootUp)
+        {
+            SetUpShootPos();
+        }
+        else
+        {
+            SetStandShootPos();
+        }
+    }
     public void SetStandShootPos()
     {
         if(currentWeaponType == ItemType.PrimaryWeapon)

@@ -18,7 +18,6 @@ public class ReloadAbility : BaseAbility
 
     public override void EnterAbility()
     {
-        currentWeapon = player.currentWeaponPrefab.GetComponent<Weapon>();
         linkedPhysics.ResetVelocity();
     }
 
@@ -33,7 +32,8 @@ public class ReloadAbility : BaseAbility
 
     private void TryToReload(InputAction.CallbackContext value)
     {
-        if(!isPermitted || currentWeapon == null)
+        currentWeapon = player.currentWeaponPrefab.GetComponent<Weapon>();
+        if (!isPermitted || currentWeapon == null)
             return;
         if (linkedPhysics.grounded == false || linkedStateMachine.currentState == PlayerStates.State.Ladders
             || linkedStateMachine.currentState == PlayerStates.State.Dash

@@ -26,7 +26,6 @@ public class ShootUpAbility : BaseAbility
     }
     public override void EnterAbility()
     {
-        currentWeapon = player.currentWeaponPrefab.GetComponent<Weapon>();
         player.SetUpShootPos();
     }
     public override void ExitAbility()
@@ -43,6 +42,7 @@ public class ShootUpAbility : BaseAbility
     }
     private void TryToShootUp(InputAction.CallbackContext value)
     {
+        currentWeapon = player.currentWeaponPrefab.GetComponent<Weapon>();
         if (!isPermitted || currentWeapon == null)
             return;
         if (linkedStateMachine.currentState == PlayerStates.State.Ladders ||
