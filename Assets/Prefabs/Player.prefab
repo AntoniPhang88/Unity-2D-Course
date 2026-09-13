@@ -234,9 +234,13 @@ MonoBehaviour:
   standingShootPos: {fileID: 7330665627720313420}
   crouchShootPos: {fileID: 3455545359985652362}
   upShootPos: {fileID: 6819663963596785865}
+  defaultWeaponVectorPos: {x: 0, y: 0, z: 0}
   secondStandingShootPos: {fileID: 7764764283150875796}
   secondCrouchShootPos: {fileID: 8298484755188653191}
   secondUpShootPos: {fileID: 4712978252870482533}
+  listToSaveAndLoad:
+  - {fileID: 2331096967675411561}
+  - {fileID: 4680552380210690686}
 --- !u!114 &4744041284283248300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1622,7 +1626,7 @@ Transform:
   m_GameObject: {fileID: 8266107398501125653}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.812, y: 0.386, z: 0}
+  m_LocalPosition: {x: 0.772, y: 0.314, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1715,11 +1719,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2968916654036284699, guid: 9ddd15160b3a9a74d97773ad2391adb1, type: 3}
+      propertyPath: maxAmmo
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2968916654036284699, guid: 9ddd15160b3a9a74d97773ad2391adb1, type: 3}
+      propertyPath: recoilTime
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2968916654036284699, guid: 9ddd15160b3a9a74d97773ad2391adb1, type: 3}
+      propertyPath: currentAmmo
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2968916654036284699, guid: 9ddd15160b3a9a74d97773ad2391adb1, type: 3}
+      propertyPath: storageAmmo
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 2968916654036284699, guid: 9ddd15160b3a9a74d97773ad2391adb1, type: 3}
+      propertyPath: recoilStrength
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ddd15160b3a9a74d97773ad2391adb1, type: 3}
+--- !u!114 &4680552380210690686 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2968916654036284699, guid: 9ddd15160b3a9a74d97773ad2391adb1, type: 3}
+  m_PrefabInstance: {fileID: 7622092096555700069}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8348539872914587092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ea70c26629e6944934033b1a5324a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Weapon
 --- !u!4 &5545338734362499581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2680235867161220760, guid: 9ddd15160b3a9a74d97773ad2391adb1, type: 3}
@@ -1836,12 +1871,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: maxAmmo
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: recoilTime
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
       propertyPath: reloadTime
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: currentAmmo
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
       propertyPath: isAutomatic
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: storageAmmo
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: recoilStrength
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
       propertyPath: visibleLineTime
@@ -1869,6 +1924,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8992466160887576596, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
   m_PrefabInstance: {fileID: 8051663573685355479}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2331096967675411561 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+  m_PrefabInstance: {fileID: 8051663573685355479}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402564555046616003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ea70c26629e6944934033b1a5324a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Weapon
 --- !u!4 &3195323670939394026 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4892405281227185213, guid: fbd7d78397494cd4295419968a1abc72, type: 3}

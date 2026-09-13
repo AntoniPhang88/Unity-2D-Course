@@ -127,15 +127,24 @@ public class Shooting : MonoBehaviour
     {
         if (currentWeapon.currentAmmo <= 0 || currentWeapon.isReloading)
             return;
-        lineRender.positionCount = 2;
+
+        Instantiate(currentWeapon.shellPrefab, currentWeapon.shellSpawnPoint.position, currentWeapon.transform.rotation);
+        currentWeapon.PlayShootEffect();
+
+        if (player.stateMachine.currentState != PlayerStates.State.ShootUp)
+            currentWeapon.transform.localPosition = player.defaultWeaponVectorPos - Vector3.right * currentWeapon.recoilStrength;
+        else
+            currentWeapon.transform.localPosition = player.defaultWeaponVectorPos - Vector3.up * currentWeapon.recoilStrength;
+
+            lineRender.positionCount = 2;
         Vector3 direction = currentWeapon.shootingPoint.right;
         RaycastHit2D hitInfo = Physics2D.Raycast(currentWeapon.shootingPoint.position, direction, Mathf.Infinity, whatToHit);
         if(hitInfo)
         {
             startPoint = currentWeapon.shootingPoint.position;
             endPoint = hitInfo.point;
-            //lineRender.SetPosition(0, startPoint);
-            //lineRender.SetPosition(1, endPoint);
+            lineRender.SetPosition(0, startPoint);
+            lineRender.SetPosition(1, endPoint);
             IDamageable damageableObject = hitInfo.collider.GetComponent<IDamageable>();
             if(damageableObject != null)
             {
@@ -148,8 +157,8 @@ public class Shooting : MonoBehaviour
         {
             startPoint = currentWeapon.shootingPoint.position;
             endPoint = currentWeapon.shootingPoint.position + direction * 10;
-            //lineRender.SetPosition(0, startPoint);
-            //lineRender.SetPosition(1, endPoint);
+            lineRender.SetPosition(0, startPoint);
+            lineRender.SetPosition(1, endPoint);
             Debug.Log("We hit Nothing");
         }
         currentWeapon.currentAmmo -= 1;
@@ -162,7 +171,9 @@ public class Shooting : MonoBehaviour
     private IEnumerator ShootDelay()
     {
         shootCooldownOver = false;
-        yield return new WaitForSeconds(currentWeapon.shootCooldown);
+        yield return new WaitForSeconds(currentWeapon.recoilTime);
+        currentWeapon.transform.localPosition = player.defaultWeaponVectorPos;
+        yield return new WaitForSeconds(currentWeapon.shootCooldown - currentWeapon.recoilTime);
         shootCooldownOver = true;
     }
     private IEnumerator ResetShootingLine()

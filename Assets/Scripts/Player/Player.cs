@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform standingShootPos;
     [SerializeField] private Transform crouchShootPos;
     [SerializeField] private Transform upShootPos;
+    [HideInInspector] public Vector3 defaultWeaponVectorPos;
 
     [Header("Secondary Weapon Positions")]
     [SerializeField] private Transform secondStandingShootPos;
@@ -42,6 +43,7 @@ public class Player : MonoBehaviour
         playerStats = GetComponentInChildren<PlayerStats>();
         stateMachine.arrayOfAbilities = playerAbilities;
         currentShootingPos = standingShootPos;
+        defaultWeaponVectorPos = standingShootPos.localPosition;
     }
 
     private void OnDisable()
@@ -122,6 +124,7 @@ public class Player : MonoBehaviour
             currentShootingPos = secondStandingShootPos;
             currentWeaponPrefab.transform.position = secondStandingShootPos.position;
         }
+        defaultWeaponVectorPos = currentShootingPos.localPosition;
         SetWeaponRotation(0);
     }
     public void SetCrouchShootPos()
@@ -136,6 +139,7 @@ public class Player : MonoBehaviour
             currentShootingPos = secondCrouchShootPos;
             currentWeaponPrefab.transform.position = secondCrouchShootPos.position;
         }
+        defaultWeaponVectorPos = currentShootingPos.localPosition;
         SetWeaponRotation(0);
     }
     public void SetUpShootPos()
@@ -150,6 +154,7 @@ public class Player : MonoBehaviour
             currentShootingPos = secondUpShootPos;
             currentWeaponPrefab.transform.position = secondUpShootPos.position;
         }
+        defaultWeaponVectorPos = currentShootingPos.localPosition;
         SetWeaponRotation(90);
     }
     private void SetWeaponRotation(float zRotation)

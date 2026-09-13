@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -181,12 +181,12 @@ TextureImporter:
       name: Single_30x34_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 0
-        width: 23
-        height: 32
+        x: 2
+        y: 1
+        width: 4
+        height: 1
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -195,6 +195,72 @@ TextureImporter:
       bones: []
       spriteID: 6183b376900bb4220800000000000000
       internalID: 2471262374975977494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shells_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1
+        width: 3
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab8a36f7c9e3884fad1c5df672555d3
+      internalID: -663997176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shells_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1
+        width: 2
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b368cd290933c9f4ab342d33790f6390
+      internalID: -616140462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shells_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58662faf898f2b64d9c7e6c207faae34
+      internalID: 1499533896
       vertices: []
       indices: 
       edges: []
@@ -213,6 +279,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      Shells_0: -663997176
+      Shells_1: -616140462
+      Shells_2: 1499533896
       Single_30x34_0: 2471262374975977494
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
