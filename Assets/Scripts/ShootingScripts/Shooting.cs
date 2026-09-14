@@ -136,7 +136,8 @@ public class Shooting : MonoBehaviour
         else
             currentWeapon.transform.localPosition = player.defaultWeaponVectorPos - Vector3.up * currentWeapon.recoilStrength;
 
-            lineRender.positionCount = 2;
+        lineRender.positionCount = 2;
+        lineRender.widthMultiplier = currentWeapon.widthMultiplier;
         Vector3 direction = currentWeapon.shootingPoint.right;
         RaycastHit2D hitInfo = Physics2D.Raycast(currentWeapon.shootingPoint.position, direction, Mathf.Infinity, whatToHit);
         if(hitInfo)
@@ -145,6 +146,12 @@ public class Shooting : MonoBehaviour
             endPoint = hitInfo.point;
             lineRender.SetPosition(0, startPoint);
             lineRender.SetPosition(1, endPoint);
+
+            Vector2 normal = hitInfo.normal;
+            float angle = Mathf.Atan2(normal.y, normal.x) * Mathf.Rad2Deg;
+            Quaternion rotation = Quaternion.Euler(0, 0, angle);
+            Instantiate(currentWeapon.hitEffectPrefab, hitInfo.point, rotation);
+
             IDamageable damageableObject = hitInfo.collider.GetComponent<IDamageable>();
             if(damageableObject != null)
             {
@@ -167,7 +174,18 @@ public class Shooting : MonoBehaviour
         OnUpdateAmmo?.Invoke(currentWeapon.currentAmmo, currentWeapon.maxAmmo, currentWeapon.storageAmmo);
 
     }
-
+    public void AddStorageAmmo(string ID, int ammoToAdd)
+    {
+        foreach(Weapon weapon in player.listToSaveAndLoad)
+        {
+            if(weapon.ID == ID)
+            {
+                weapon.storageAmmo += ammoToAdd;
+                OnUpdateAllInfo?.Invoke(currentWeapon.weaponIconSprite, currentWeapon.currentAmmo, currentWeapon.maxAmmo, currentWeapon.storageAmmo);
+                break;
+            }
+        }
+    }
     private IEnumerator ShootDelay()
     {
         shootCooldownOver = false;

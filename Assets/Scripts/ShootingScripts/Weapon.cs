@@ -27,9 +27,12 @@ public class Weapon : MonoBehaviour
     public Transform shellSpawnPoint;
     public GameObject shellPrefab;
     public GameObject effectPrefab;
+    public GameObject hitEffectPrefab;
     public Sprite weaponIconSprite;
 
+    [Header("LineRenderer")]
     public float visibleLineTime;
+    public float widthMultiplier;
 
     [SerializeField]
     private WeaponData weaponData = new WeaponData();
