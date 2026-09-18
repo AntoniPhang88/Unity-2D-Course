@@ -4,6 +4,15 @@ public class EnemySimpleStateMachine : MonoBehaviour
 {
     protected EnemyState previousState;
     protected EnemyState currentState;
+
+    [SerializeField] protected Animator anim;
+    public bool facingRight = true;
+
+    public void ForceFlip()
+    {
+        transform.Rotate(0, 180, 0);
+        facingRight = !facingRight;
+    }
     public enum EnemyState
     { 
         Idle,
