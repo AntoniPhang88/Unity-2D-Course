@@ -12,6 +12,12 @@ public class PatrollPhysics : MonoBehaviour
     public bool groundDetected;
     public bool wallDetected;
 
+    [Header("Colliders")]
+    [SerializeField] private BoxCollider2D attackDetectionCol;
+    [SerializeField] private PolygonCollider2D attackCol;
+
+    public bool inAttackRange;
+
     private void FixedUpdate()
     {
         groundDetected = Physics2D.OverlapCircle(groundCheckPoint.position, checkRadius, whatToDetect);
@@ -26,5 +32,13 @@ public class PatrollPhysics : MonoBehaviour
     public void NegateForces()
     {
         rb.linearVelocity = Vector2.zero;
+    }
+    public void ActivateAttackCol()
+    {
+        attackCol.enabled = true;
+    }
+    public void DeactivatedAttackCol()
+    {
+        attackCol.enabled = false;
     }
 }

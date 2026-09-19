@@ -19,6 +19,9 @@ public class PatrollingStateMachine : EnemySimpleStateMachine
     private float moveStateTimer;
     private float turnCooldown;
 
+    [Header("ATTACK STATE")]
+    [SerializeField] private string attackAnimationName;
+
     #region IDLE
     public override void EnterIdle()
     {
@@ -33,6 +36,10 @@ public class PatrollingStateMachine : EnemySimpleStateMachine
         {
             ChangeState(EnemyState.Move);
         }
+        if(patrollPhysics.inAttackRange)
+        {
+            ChangeState(EnemyState.Attack);
+        }
     }
     public override void ExitIdle()
     {
@@ -40,7 +47,7 @@ public class PatrollingStateMachine : EnemySimpleStateMachine
     }
     #endregion
 
-    #region Move
+    #region MOVE
     public override void EnterMove()
     {
         anim.Play(moveAnimationName);
@@ -63,10 +70,33 @@ public class PatrollingStateMachine : EnemySimpleStateMachine
             speed *= -1;
             turnCooldown = minimumTurnDelay;
         }
+        if (patrollPhysics.inAttackRange)
+        {
+            ChangeState(EnemyState.Attack);
+        }
     }
     public override void FixUpdateMove()
     {
         patrollPhysics.rb.linearVelocity = new Vector2(speed, patrollPhysics.rb.linearVelocityY);
+    }
+    #endregion
+
+    #region ATTACK
+    public override void EnterAttack()
+    {
+        anim.Play(attackAnimationName);
+        patrollPhysics.NegateForces();
+    }
+    public void EndOfAttack()
+    {
+        if(patrollPhysics.inAttackRange)
+        {
+            anim.Play(attackAnimationName, 0, 0);
+        }
+        else
+        {
+            ChangeState(previousState);
+        }
     }
     #endregion
 }
