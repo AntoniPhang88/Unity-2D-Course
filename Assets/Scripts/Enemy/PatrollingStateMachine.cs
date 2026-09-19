@@ -22,6 +22,9 @@ public class PatrollingStateMachine : EnemySimpleStateMachine
     [Header("ATTACK STATE")]
     [SerializeField] private string attackAnimationName;
 
+    [Header("DEATH STATE")]
+    [SerializeField] private string deathAnimationName;
+
     #region IDLE
     public override void EnterIdle()
     {
@@ -97,6 +100,15 @@ public class PatrollingStateMachine : EnemySimpleStateMachine
         {
             ChangeState(previousState);
         }
+    }
+    #endregion
+
+    #region DEATH
+    public override void EnterDeath()
+    {
+        anim.Play(deathAnimationName);
+        patrollPhysics.DeathColliderDeactivation();
+        patrollPhysics.NegateForces();
     }
     #endregion
 }

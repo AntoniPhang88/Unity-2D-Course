@@ -312,6 +312,132 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &381474490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 381474491}
+  - component: {fileID: 381474492}
+  - component: {fileID: 381474493}
+  m_Layer: 15
+  m_Name: Stats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &381474491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381474490}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 538488076}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &381474492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381474490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a51f6a98b06b5434d9f4c1e6cbec0cdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DemonStats
+  enemyStateMachine: {fileID: 538488077}
+  health: 10
+  flashDuration: 0.1
+  flashStrength: 0.3
+  flashCol: {r: 0.8867924, g: 0.11326421, b: 0.10541113, a: 0}
+  flashMaterial: {fileID: 2100000, guid: 985287a03736ca44d98dbbed4d4c1570, type: 2}
+  spriter: {fileID: 538488075}
+--- !u!60 &381474493
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381474490}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.26853323, y: 0.2807765}
+      - {x: 0.2570877, y: 0.79251194}
+      - {x: -0.07327938, y: 0.7947571}
+      - {x: -0.19095707, y: 0.6430857}
+      - {x: -0.1580801, y: 0.44217205}
+      - {x: -0.096484184, y: 0.31786394}
+      - {x: -0.5074826, y: 0.14685991}
+      - {x: -0.7248931, y: -0.4243517}
+      - {x: -0.6507149, y: -0.97847843}
+      - {x: -0.2752757, y: -0.31538773}
+      - {x: -0.17785501, y: -0.40987158}
+      - {x: -0.34539604, y: -0.8842869}
+      - {x: -0.31741762, y: -1.3811407}
+      - {x: -0.20120764, y: -1.3727765}
+      - {x: 0.02693367, y: -0.89534616}
+      - {x: 0.15350962, y: -0.8894777}
+      - {x: 0.273139, y: -1.396357}
+      - {x: 0.36548996, y: -1.3627}
+      - {x: 0.428649, y: -0.81557214}
+      - {x: 0.27620697, y: -0.56946564}
+      - {x: 0.24947357, y: -0.45228958}
+      - {x: 0.32127762, y: -0.44996548}
+      - {x: 0.54266834, y: -0.7573981}
+      - {x: 0.6015873, y: -1.122241}
+      - {x: 0.677351, y: -0.592237}
+      - {x: 0.56025136, y: 0.029946089}
+      - {x: 0.47103643, y: 0.13379759}
+  m_UseDelaunayMesh: 1
 --- !u!1 &407541066
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,7 +1270,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1223002144, guid: 2470fb49d11fd8d47aeedb97af544245, type: 3}
+  m_Sprite: {fileID: -379653273, guid: 74b7c89acb523014eb34fa5de5ebf0e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1171,6 +1297,7 @@ Transform:
   - {fileID: 921325030}
   - {fileID: 1043288026}
   - {fileID: 1104335210}
+  - {fileID: 381474491}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &538488077
@@ -1197,6 +1324,7 @@ MonoBehaviour:
   maxMoveTime: 6
   minimumTurnDelay: 0.1
   attackAnimationName: AttackDemon
+  deathAnimationName: DeathDemon
 --- !u!114 &538488078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,6 +1348,7 @@ MonoBehaviour:
   wallDetected: 0
   attackDetectionCol: {fileID: 1043288025}
   attackCol: {fileID: 1104335208}
+  statsCol: {fileID: 381474493}
   inAttackRange: 0
 --- !u!114 &538488079
 MonoBehaviour:
@@ -13040,10 +13169,26 @@ PrefabInstance:
       propertyPath: widthMultiplier
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 6577021653407870980, guid: 8a07e50804c7a2a4cba8938e931b0b86, type: 3}
+      propertyPath: whatToHit.m_Bits
+      value: 32832
+      objectReference: {fileID: 0}
     - target: {fileID: 6746867125541478003, guid: 8a07e50804c7a2a4cba8938e931b0b86, type: 3}
       propertyPath: minimapCanvasGroup
       value: 
       objectReference: {fileID: 480069946}
+    - target: {fileID: 8157892610333302109, guid: 8a07e50804c7a2a4cba8938e931b0b86, type: 3}
+      propertyPath: flashCol.b
+      value: 0.9547169
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157892610333302109, guid: 8a07e50804c7a2a4cba8938e931b0b86, type: 3}
+      propertyPath: flashCol.g
+      value: 0.9547169
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157892610333302109, guid: 8a07e50804c7a2a4cba8938e931b0b86, type: 3}
+      propertyPath: flashCol.r
+      value: 0.9547169
+      objectReference: {fileID: 0}
     - target: {fileID: 8157892610333302109, guid: 8a07e50804c7a2a4cba8938e931b0b86, type: 3}
       propertyPath: healthBarControl
       value: 

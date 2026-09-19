@@ -15,6 +15,7 @@ public class PatrollPhysics : MonoBehaviour
     [Header("Colliders")]
     [SerializeField] private BoxCollider2D attackDetectionCol;
     [SerializeField] private PolygonCollider2D attackCol;
+    [SerializeField] private PolygonCollider2D statsCol;
 
     public bool inAttackRange;
 
@@ -40,5 +41,11 @@ public class PatrollPhysics : MonoBehaviour
     public void DeactivatedAttackCol()
     {
         attackCol.enabled = false;
+    }
+    public void DeathColliderDeactivation()
+    {
+        DeactivatedAttackCol();
+        attackDetectionCol.enabled = false;
+        statsCol.enabled = false;
     }
 }
