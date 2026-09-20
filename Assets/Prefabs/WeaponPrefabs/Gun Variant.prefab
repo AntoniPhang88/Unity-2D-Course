@@ -135,6 +135,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: recoilTime
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
       propertyPath: reloadTime
       value: 0.5
       objectReference: {fileID: 0}
@@ -162,6 +166,14 @@ PrefabInstance:
       propertyPath: shootCooldown
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: recoilStrength
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
+      propertyPath: hitEffectPrefab
+      value: 
+      objectReference: {fileID: 7979589495503037827, guid: 0d076e12be164ac4cb2019e2fab5404a, type: 3}
     - target: {fileID: 5757000050387435454, guid: fbd7d78397494cd4295419968a1abc72, type: 3}
       propertyPath: visibleLineTime
       value: 0.08

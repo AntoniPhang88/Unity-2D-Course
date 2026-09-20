@@ -179,12 +179,16 @@ MonoBehaviour:
   storageAmmo: 15
   reloadTime: 0
   isReloading: 0
+  recoilStrength: 0.1
+  recoilTime: 0.08
   shootingPoint: {fileID: 688806712803573454}
   shellSpawnPoint: {fileID: 1439772941338590371}
   shellPrefab: {fileID: 6686754050993001282, guid: 8435c23cdb25d32489d7c4df5c25d4ed, type: 3}
   effectPrefab: {fileID: 9042554547958089768}
+  hitEffectPrefab: {fileID: 7979589495503037827, guid: 0d076e12be164ac4cb2019e2fab5404a, type: 3}
   weaponIconSprite: {fileID: 1512695145, guid: 3e1a70b8213ff4747a461a84ef121616, type: 3}
-  visibleLineTime: 0
+  visibleLineTime: 0.1
+  widthMultiplier: 0.1
   weaponData:
     ID: 
     currentAmmo: 0
