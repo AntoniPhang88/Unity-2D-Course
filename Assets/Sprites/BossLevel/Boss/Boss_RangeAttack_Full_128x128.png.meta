@@ -94,7 +94,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -108,7 +108,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -132,7 +132,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -238,20 +238,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 407
-        width: 55
-        height: 79
+        x: 0
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2b7738c86dca98f50800000000000000
-      internalID: 6884223542892918706
+      spriteID: bf916e555f9e88f4db5e3f6dee6988df
+      internalID: -1121502563
       vertices: []
       indices: 
       edges: []
@@ -260,20 +260,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_1
       rect:
         serializedVersion: 2
-        x: 152
-        y: 409
-        width: 81
-        height: 76
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 29314e508085edb20800000000000000
-      internalID: 3161060779942482834
+      spriteID: 438f37e16456a1d4eb141681934e6594
+      internalID: -1181263411
       vertices: []
       indices: 
       edges: []
@@ -282,20 +282,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_2
       rect:
         serializedVersion: 2
-        x: 297
-        y: 407
-        width: 47
-        height: 71
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 208dfa08648532da0800000000000000
-      internalID: -5970831621133182974
+      spriteID: 47b8955147f5d8b4591332a5dd87e82d
+      internalID: -545325476
       vertices: []
       indices: 
       edges: []
@@ -304,20 +304,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_3
       rect:
         serializedVersion: 2
-        x: 424
-        y: 407
-        width: 49
-        height: 71
+        x: 384
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f4e68f4d64085c7b0800000000000000
-      internalID: -5204612752647623089
+      spriteID: d3c7f024ee5b6754eb91ff808156dab3
+      internalID: -1062823639
       vertices: []
       indices: 
       edges: []
@@ -326,20 +326,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_4
       rect:
         serializedVersion: 2
-        x: 551
-        y: 407
-        width: 51
-        height: 71
+        x: 512
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9700ef69fcef68390800000000000000
-      internalID: -7816279935710003079
+      spriteID: bc96314ea6173fa42a6372470c66cc73
+      internalID: -629376985
       vertices: []
       indices: 
       edges: []
@@ -348,20 +348,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_5
       rect:
         serializedVersion: 2
-        x: 39
-        y: 279
-        width: 51
-        height: 69
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d9d9f8df42f1eb470800000000000000
-      internalID: 8412195397707996573
+      spriteID: 3c7de32439cd47b4997ee32aef408fc0
+      internalID: -421171033
       vertices: []
       indices: 
       edges: []
@@ -370,20 +370,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_6
       rect:
         serializedVersion: 2
-        x: 168
-        y: 280
-        width: 49
-        height: 69
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e3b2add5c6da10380800000000000000
-      internalID: -9006727098821629122
+      spriteID: b4af67f5a04b8284ca1dbcf2878173f9
+      internalID: -1514317775
       vertices: []
       indices: 
       edges: []
@@ -392,20 +392,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_7
       rect:
         serializedVersion: 2
-        x: 296
-        y: 280
-        width: 49
-        height: 69
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 691ea27f174dcaa80800000000000000
-      internalID: -8454148814538088042
+      spriteID: 41802a726fd981546a50001be8a88d1a
+      internalID: -1724365966
       vertices: []
       indices: 
       edges: []
@@ -414,20 +414,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_8
       rect:
         serializedVersion: 2
-        x: 424
-        y: 280
-        width: 49
-        height: 69
+        x: 384
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a2b6fa1929d57bb40800000000000000
-      internalID: 5455932357673446186
+      spriteID: 23dd23a389b8c06428f70355e2bbf082
+      internalID: -657056922
       vertices: []
       indices: 
       edges: []
@@ -436,20 +436,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_9
       rect:
         serializedVersion: 2
-        x: 551
-        y: 279
-        width: 51
-        height: 69
+        x: 512
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9b7923e7a102cb230800000000000000
-      internalID: 3655832295676483513
+      spriteID: 53b46b318d648a34389b0f7c7444abe7
+      internalID: 198770841
       vertices: []
       indices: 
       edges: []
@@ -458,20 +458,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_10
       rect:
         serializedVersion: 2
-        x: 40
-        y: 152
-        width: 49
-        height: 69
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 89b9606d1889fcee0800000000000000
-      internalID: -1238603689094636648
+      spriteID: cd41479904e9110418d2bc29e33439fa
+      internalID: 927328359
       vertices: []
       indices: 
       edges: []
@@ -480,20 +480,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_11
       rect:
         serializedVersion: 2
-        x: 168
-        y: 152
-        width: 49
-        height: 69
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d5c7b097addcc3790800000000000000
-      internalID: -7548932537162433443
+      spriteID: 544282a8c8ab0d944a84015056e3bd46
+      internalID: -1021774516
       vertices: []
       indices: 
       edges: []
@@ -502,20 +502,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_12
       rect:
         serializedVersion: 2
-        x: 296
-        y: 152
-        width: 49
-        height: 69
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f1905d48916a88270800000000000000
-      internalID: 8253028945689381151
+      spriteID: 973be196e7758a84291f0478e0d6c563
+      internalID: -1448060889
       vertices: []
       indices: 
       edges: []
@@ -524,20 +524,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_13
       rect:
         serializedVersion: 2
-        x: 424
-        y: 151
-        width: 48
-        height: 69
+        x: 384
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a3a352ac5708cd9f0800000000000000
-      internalID: -442337419998184902
+      spriteID: b5f74edbd500cea4ea71677c0fc31612
+      internalID: 23399316
       vertices: []
       indices: 
       edges: []
@@ -546,20 +546,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_14
       rect:
         serializedVersion: 2
-        x: 552
-        y: 151
-        width: 48
-        height: 69
+        x: 512
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a3d5eb6e95c434fe0800000000000000
-      internalID: -1206036326198125254
+      spriteID: a69effdf253b2fd4ebde6b1f41698ad2
+      internalID: -1040598430
       vertices: []
       indices: 
       edges: []
@@ -568,20 +568,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_15
       rect:
         serializedVersion: 2
-        x: 15
-        y: 21
-        width: 99
-        height: 80
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5ac96ace20db7ec80800000000000000
-      internalID: -8293452368521552731
+      spriteID: bc66b576f44c56d479fdbac5f2a27657
+      internalID: 1115321988
       vertices: []
       indices: 
       edges: []
@@ -590,20 +590,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_16
       rect:
         serializedVersion: 2
-        x: 143
-        y: 22
-        width: 99
-        height: 80
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 39e90e7939c04a8f0800000000000000
-      internalID: -530285028075069805
+      spriteID: bca0aa07ac2821e4685f6141666ab3bb
+      internalID: 1708572797
       vertices: []
       indices: 
       edges: []
@@ -612,20 +612,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_17
       rect:
         serializedVersion: 2
-        x: 271
-        y: 21
-        width: 99
-        height: 80
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 30b164cce69e0d520800000000000000
-      internalID: 2724934436641970947
+      spriteID: 9b1080f07320e21468e89172ff8f4075
+      internalID: 591917251
       vertices: []
       indices: 
       edges: []
@@ -634,20 +634,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_18
       rect:
         serializedVersion: 2
-        x: 416
-        y: 24
-        width: 65
-        height: 73
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b5433096fb66ef1c0800000000000000
-      internalID: -4468020808018348965
+      spriteID: 450380bab8f9c0f4e8edec1d13374ed5
+      internalID: 1510485400
       vertices: []
       indices: 
       edges: []
@@ -656,20 +656,20 @@ TextureImporter:
       name: Boss_RangeAttack_Full_128x128_19
       rect:
         serializedVersion: 2
-        x: 549
-        y: 23
-        width: 55
-        height: 75
+        x: 512
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d6a711d459bf02ee0800000000000000
-      internalID: -1287752874766271891
+      spriteID: 784b2b63efbfcdb4d89516b9eb8e169f
+      internalID: 1329941442
       vertices: []
       indices: 
       edges: []
@@ -678,7 +678,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -686,28 +686,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Boss_RangeAttack_Full_128x128_0: 6884223542892918706
-      Boss_RangeAttack_Full_128x128_1: 3161060779942482834
-      Boss_RangeAttack_Full_128x128_10: -1238603689094636648
-      Boss_RangeAttack_Full_128x128_11: -7548932537162433443
-      Boss_RangeAttack_Full_128x128_12: 8253028945689381151
-      Boss_RangeAttack_Full_128x128_13: -442337419998184902
-      Boss_RangeAttack_Full_128x128_14: -1206036326198125254
-      Boss_RangeAttack_Full_128x128_15: -8293452368521552731
-      Boss_RangeAttack_Full_128x128_16: -530285028075069805
-      Boss_RangeAttack_Full_128x128_17: 2724934436641970947
-      Boss_RangeAttack_Full_128x128_18: -4468020808018348965
-      Boss_RangeAttack_Full_128x128_19: -1287752874766271891
-      Boss_RangeAttack_Full_128x128_2: -5970831621133182974
-      Boss_RangeAttack_Full_128x128_3: -5204612752647623089
-      Boss_RangeAttack_Full_128x128_4: -7816279935710003079
-      Boss_RangeAttack_Full_128x128_5: 8412195397707996573
-      Boss_RangeAttack_Full_128x128_6: -9006727098821629122
-      Boss_RangeAttack_Full_128x128_7: -8454148814538088042
-      Boss_RangeAttack_Full_128x128_8: 5455932357673446186
-      Boss_RangeAttack_Full_128x128_9: 3655832295676483513
+      Boss_RangeAttack_Full_128x128_0: -1121502563
+      Boss_RangeAttack_Full_128x128_1: -1181263411
+      Boss_RangeAttack_Full_128x128_10: 927328359
+      Boss_RangeAttack_Full_128x128_11: -1021774516
+      Boss_RangeAttack_Full_128x128_12: -1448060889
+      Boss_RangeAttack_Full_128x128_13: 23399316
+      Boss_RangeAttack_Full_128x128_14: -1040598430
+      Boss_RangeAttack_Full_128x128_15: 1115321988
+      Boss_RangeAttack_Full_128x128_16: 1708572797
+      Boss_RangeAttack_Full_128x128_17: 591917251
+      Boss_RangeAttack_Full_128x128_18: 1510485400
+      Boss_RangeAttack_Full_128x128_19: 1329941442
+      Boss_RangeAttack_Full_128x128_2: -545325476
+      Boss_RangeAttack_Full_128x128_3: -1062823639
+      Boss_RangeAttack_Full_128x128_4: -629376985
+      Boss_RangeAttack_Full_128x128_5: -421171033
+      Boss_RangeAttack_Full_128x128_6: -1514317775
+      Boss_RangeAttack_Full_128x128_7: -1724365966
+      Boss_RangeAttack_Full_128x128_8: -657056922
+      Boss_RangeAttack_Full_128x128_9: 198770841
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

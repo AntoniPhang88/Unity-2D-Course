@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -202,20 +202,20 @@ TextureImporter:
       name: Boss_RangeAttack_Phase3_128x128_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 23
-        width: 51
-        height: 71
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 801fda9d2c10644e0800000000000000
-      internalID: -1997907448304897784
+      spriteID: c697ab125c8be84409179d30bb4f93d3
+      internalID: 1122662602
       vertices: []
       indices: 
       edges: []
@@ -224,20 +224,20 @@ TextureImporter:
       name: Boss_RangeAttack_Phase3_128x128_1
       rect:
         serializedVersion: 2
-        x: 168
-        y: 23
-        width: 48
-        height: 69
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e05268b495730d900800000000000000
-      internalID: 707125998155867406
+      spriteID: 117cbf5e789cc704ea5cc018382f1e78
+      internalID: 823635983
       vertices: []
       indices: 
       edges: []
@@ -246,20 +246,20 @@ TextureImporter:
       name: Boss_RangeAttack_Phase3_128x128_2
       rect:
         serializedVersion: 2
-        x: 296
-        y: 23
-        width: 48
-        height: 69
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 91e81890a5a4dea80800000000000000
-      internalID: -8436004776428073447
+      spriteID: b2ded9cd18329564a8a103b740feda1b
+      internalID: -1914762968
       vertices: []
       indices: 
       edges: []
@@ -268,20 +268,20 @@ TextureImporter:
       name: Boss_RangeAttack_Phase3_128x128_3
       rect:
         serializedVersion: 2
-        x: 399
-        y: 21
-        width: 99
-        height: 80
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 896628431340237b0800000000000000
-      internalID: -5246126006552336744
+      spriteID: 95830e314ed2d5a40b816e2b04d50f88
+      internalID: -2000390535
       vertices: []
       indices: 
       edges: []
@@ -290,20 +290,20 @@ TextureImporter:
       name: Boss_RangeAttack_Phase3_128x128_4
       rect:
         serializedVersion: 2
-        x: 527
-        y: 22
-        width: 99
-        height: 80
+        x: 512
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c83acf77894b0dcf0800000000000000
-      internalID: -229485014054820980
+      spriteID: f69257b83aaf6d248a261480c61fb5c2
+      internalID: -1934309276
       vertices: []
       indices: 
       edges: []
@@ -312,20 +312,20 @@ TextureImporter:
       name: Boss_RangeAttack_Phase3_128x128_5
       rect:
         serializedVersion: 2
-        x: 655
-        y: 21
-        width: 99
-        height: 80
+        x: 640
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4be5daf664f0baf00800000000000000
-      internalID: 1129012926782201524
+      spriteID: 2c5a5cdac2b5af841a53dcdc216a72a7
+      internalID: -1810970175
       vertices: []
       indices: 
       edges: []
@@ -334,20 +334,20 @@ TextureImporter:
       name: Boss_RangeAttack_Phase3_128x128_6
       rect:
         serializedVersion: 2
-        x: 800
-        y: 24
-        width: 65
-        height: 73
+        x: 768
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1ec8eabe755055d50800000000000000
-      internalID: 6725287493722082529
+      spriteID: 1611281e9506e2845a22e50d75f27477
+      internalID: 1579388378
       vertices: []
       indices: 
       edges: []
@@ -356,20 +356,20 @@ TextureImporter:
       name: Boss_RangeAttack_Phase3_128x128_7
       rect:
         serializedVersion: 2
-        x: 933
-        y: 23
-        width: 55
-        height: 75
+        x: 896
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e526a9277540b69c0800000000000000
-      internalID: -3933045075946610082
+      spriteID: 6be896913259a4a40a9c075e49deb6d5
+      internalID: 954954641
       vertices: []
       indices: 
       edges: []
@@ -378,7 +378,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -386,16 +386,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Boss_RangeAttack_Phase3_128x128_0: -1997907448304897784
-      Boss_RangeAttack_Phase3_128x128_1: 707125998155867406
-      Boss_RangeAttack_Phase3_128x128_2: -8436004776428073447
-      Boss_RangeAttack_Phase3_128x128_3: -5246126006552336744
-      Boss_RangeAttack_Phase3_128x128_4: -229485014054820980
-      Boss_RangeAttack_Phase3_128x128_5: 1129012926782201524
-      Boss_RangeAttack_Phase3_128x128_6: 6725287493722082529
-      Boss_RangeAttack_Phase3_128x128_7: -3933045075946610082
+      Boss_RangeAttack_Phase3_128x128_0: 1122662602
+      Boss_RangeAttack_Phase3_128x128_1: 823635983
+      Boss_RangeAttack_Phase3_128x128_2: -1914762968
+      Boss_RangeAttack_Phase3_128x128_3: -2000390535
+      Boss_RangeAttack_Phase3_128x128_4: -1934309276
+      Boss_RangeAttack_Phase3_128x128_5: -1810970175
+      Boss_RangeAttack_Phase3_128x128_6: 1579388378
+      Boss_RangeAttack_Phase3_128x128_7: 954954641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

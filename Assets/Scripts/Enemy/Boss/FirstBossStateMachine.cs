@@ -1,0 +1,132 @@
+using UnityEngine;
+
+public class FirstBossStateMachine : BossStateMachine
+{
+    [SerializeField] private BossPhysics bossPhysics;
+    private Player player;
+
+    [Header("IDLE STATE")]
+    [SerializeField] private string idleAnimationName;
+    [SerializeField] private float minIdleTime;
+    [SerializeField] private float maxIdleTime;
+    private float idleStateTimer;
+
+    [Header("TELEPORT STATE")]
+    [SerializeField] private string teleportOutAnimationName;
+    [SerializeField] private string teleportInAnimationName;
+    [SerializeField] private float minTeleportTime;
+    [SerializeField] private float maxTeleportTime;
+    [SerializeField] private Transform[] teleportPoints;
+    private float teleportStateTimer;
+    private int teleportIndex;
+    private int lastTeleportIndex;
+    private bool canCheckTeleportInfo;
+
+    [Header("ATTACK STATE")]
+    [SerializeField] private string attackAnimationName;
+    [SerializeField] private float attackMeeleCooldownTime;
+    private float meeleAttackTimer;
+
+    private void Start()
+    {
+        player = FindAnyObjectByType<Player>();
+    }
+    #region IDLE
+    public override void EnterIdle()
+    {
+        anim.Play(idleAnimationName);
+        idleStateTimer = Random.Range(minIdleTime, maxIdleTime);
+    }
+    public override void UpdateIdle()
+    {
+        meeleAttackTimer -= Time.deltaTime;
+        if(bossPhysics.inAttackRange)
+        {
+            if (meeleAttackTimer <= 0)
+                ChangeState(BossState.Attack);
+            return;
+        }
+        idleStateTimer -= Time.deltaTime;
+        if(idleStateTimer <= 0)
+        {
+            ChangeState(BossState.Teleport);
+        }
+    }
+    #endregion
+
+    #region TELEPORT
+    public override void EnterTeleport()
+    {
+        bossPhysics.DisableStatsCol();
+        teleportIndex = Random.Range(0, teleportPoints.Length);
+        while (teleportIndex == lastTeleportIndex)
+        {
+            teleportIndex = Random.Range(0, teleportPoints.Length);
+        }
+        lastTeleportIndex = teleportIndex;
+        anim.Play(teleportOutAnimationName);
+    }
+    public override void UpdateTeleport()
+    {
+        if (!canCheckTeleportInfo)
+            return;
+        teleportStateTimer -= Time.deltaTime;
+        if(bossPhysics.inAttackRange)
+        {
+            //attack the player
+            ChangeState(BossState.Attack);
+        }
+        else if (teleportStateTimer <= 0)
+        {
+            //range attack or something else
+            ChangeState(BossState.Idle);
+        }
+        // determine what to do
+    }
+    public override void ExitTeleport()
+    {
+        canCheckTeleportInfo = false;
+    }
+    public void Teleport()
+    {
+        int randomChance = Random.Range(0, 2);
+        if(randomChance == 0)
+        {
+            transform.position = teleportPoints[teleportIndex].position;
+        }
+        else
+        {
+            if (player != null)
+                transform.position = player.transform.position + Vector3.up * 1.6f;
+            else
+                transform.position = teleportPoints[teleportIndex].position;
+        }
+        anim.Play(teleportInAnimationName);
+    }
+    public void EnableCheckingTeleport()
+    {
+        canCheckTeleportInfo = true;
+        teleportStateTimer = Random.Range(minTeleportTime, maxTeleportTime);
+        bossPhysics.EnableStatsCol();
+        bossPhysics.EnableDetectionCol();
+        anim.Play(idleAnimationName);
+    }
+    #endregion
+
+    #region ATTACK
+    public override void EnterAttack()
+    {
+        anim.Play(attackAnimationName);
+        bossPhysics.DisableDetectionCol();
+        bossPhysics.inAttackRange = false;
+    }
+    public override void ExitAttack()
+    {
+        meeleAttackTimer = attackMeeleCooldownTime;
+    }
+    public void ChangeStateToIdle()
+    {
+        ChangeState(BossState.Idle);
+    }
+    #endregion
+}
