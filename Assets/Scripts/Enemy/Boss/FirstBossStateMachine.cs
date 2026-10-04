@@ -27,6 +27,16 @@ public class FirstBossStateMachine : BossStateMachine
     [SerializeField] private float attackMeeleCooldownTime;
     private float meeleAttackTimer;
 
+    [Header("RANGE ATTACK STATE")]
+    [SerializeField] private string attackRangeAnimationName;
+    [SerializeField] private GameObject projectilePrefab;
+    [SerializeField] private Transform shootingPoint;
+
+    [Header("DEATH STATE")]
+    [SerializeField] private string deathAnimationName;
+    [SerializeField] private GameObject headPrefab;
+
+
     private void Start()
     {
         player = FindAnyObjectByType<Player>();
@@ -79,7 +89,7 @@ public class FirstBossStateMachine : BossStateMachine
         else if (teleportStateTimer <= 0)
         {
             //range attack or something else
-            ChangeState(BossState.Idle);
+            ChangeState(BossState.RangeAttack);
         }
         // determine what to do
     }
@@ -127,6 +137,38 @@ public class FirstBossStateMachine : BossStateMachine
     public void ChangeStateToIdle()
     {
         ChangeState(BossState.Idle);
+    }
+    #endregion
+
+    #region RANGE ATTACK
+    public override void EnterRangeAttack()
+    {
+        anim.Play(attackRangeAnimationName);
+    }
+    public void SpawnBossProjectile()
+    {
+        BossProjectile projectile = Instantiate(projectilePrefab, shootingPoint.position, transform.rotation).GetComponent<BossProjectile>();
+        if(player != null)
+        {
+            projectile.MoveProjectile(player.transform);
+        }
+        else
+        {
+            Destroy(projectile.gameObject);
+        }
+    }
+    #endregion
+
+    #region DEATH
+    public override void EnterDeath()
+    {
+        anim.Play(deathAnimationName);
+        bossPhysics.DisableAllColliders();
+    }
+    public void DeathAnimationEvent()
+    {
+        Instantiate(headPrefab, transform.position, transform.rotation);
+        gameObject.SetActive(false);
     }
     #endregion
 }
