@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55b2518e1a77dc45966b44a9d1fa7ff, type: 3}
+  m_Name: Trader Line 1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueLine
+  speakerName: Trader
+  dialogueText: 'Hello Stranger!, I''m Trader.
+
+    Who are you?'
+  speakerIcon: {fileID: -1650053300, guid: 550224cd8a53eaa4faec02c3b82c5be0, type: 3}

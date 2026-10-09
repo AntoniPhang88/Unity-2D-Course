@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -202,20 +202,20 @@ TextureImporter:
       name: Trader_32x32_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 18
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b37b1ebdcabff5040800000000000000
-      internalID: 4638702861056849723
+      spriteID: 0b13f1186e39bad48b5fbd0df928e3c4
+      internalID: -61589263
       vertices: []
       indices: 
       edges: []
@@ -224,20 +224,20 @@ TextureImporter:
       name: Trader_32x32_1
       rect:
         serializedVersion: 2
-        x: 38
+        x: 32
         y: 0
-        width: 18
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 16876b5b0016c9730800000000000000
-      internalID: 4007184424129427553
+      spriteID: 8d76e2b4f8d4a7546b324f348b73d834
+      internalID: 1088394785
       vertices: []
       indices: 
       edges: []
@@ -246,20 +246,20 @@ TextureImporter:
       name: Trader_32x32_2
       rect:
         serializedVersion: 2
-        x: 70
+        x: 64
         y: 0
-        width: 18
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a71d4c50888fda7d0800000000000000
-      internalID: -2905392921488076422
+      spriteID: d1e2c83745c04024387638f8ad033048
+      internalID: -820335976
       vertices: []
       indices: 
       edges: []
@@ -268,20 +268,20 @@ TextureImporter:
       name: Trader_32x32_3
       rect:
         serializedVersion: 2
-        x: 102
+        x: 96
         y: 0
-        width: 18
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 583e15378946b42f0800000000000000
-      internalID: -987585087345138811
+      spriteID: aaaff8b446d2b2940897dd53aa4ce048
+      internalID: 58562204
       vertices: []
       indices: 
       edges: []
@@ -290,20 +290,20 @@ TextureImporter:
       name: Trader_32x32_4
       rect:
         serializedVersion: 2
-        x: 134
+        x: 128
         y: 0
-        width: 18
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 409cee3df690dd540800000000000000
-      internalID: 5034190334371744004
+      spriteID: eb24925dc5620214aaba06668b99eeb0
+      internalID: 24063616
       vertices: []
       indices: 
       edges: []
@@ -312,20 +312,20 @@ TextureImporter:
       name: Trader_32x32_5
       rect:
         serializedVersion: 2
-        x: 166
+        x: 160
         y: 0
-        width: 18
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 42adaeb85ebffb6a0800000000000000
-      internalID: -6431144779548272092
+      spriteID: 26b74e92d20e02949afcd9d7c700013d
+      internalID: -1809997658
       vertices: []
       indices: 
       edges: []
@@ -334,20 +334,20 @@ TextureImporter:
       name: Trader_32x32_6
       rect:
         serializedVersion: 2
-        x: 198
+        x: 192
         y: 0
-        width: 18
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: faa4416469c3805b0800000000000000
-      internalID: -5402001136912414033
+      spriteID: 6c99a356bf9d2a74590722df15fe3bbf
+      internalID: -1800930235
       vertices: []
       indices: 
       edges: []
@@ -356,20 +356,20 @@ TextureImporter:
       name: Trader_32x32_7
       rect:
         serializedVersion: 2
-        x: 230
+        x: 224
         y: 0
-        width: 18
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2d70fe04967353c30800000000000000
-      internalID: 4338434741241841618
+      spriteID: ba13545a944dd94489bebb7da9d03ff5
+      internalID: -1325863772
       vertices: []
       indices: 
       edges: []
@@ -378,7 +378,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -386,16 +386,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Trader_32x32_0: 4638702861056849723
-      Trader_32x32_1: 4007184424129427553
-      Trader_32x32_2: -2905392921488076422
-      Trader_32x32_3: -987585087345138811
-      Trader_32x32_4: 5034190334371744004
-      Trader_32x32_5: -6431144779548272092
-      Trader_32x32_6: -5402001136912414033
-      Trader_32x32_7: 4338434741241841618
+      Trader_32x32_0: -61589263
+      Trader_32x32_1: 1088394785
+      Trader_32x32_2: -820335976
+      Trader_32x32_3: 58562204
+      Trader_32x32_4: 24063616
+      Trader_32x32_5: -1809997658
+      Trader_32x32_6: -1800930235
+      Trader_32x32_7: -1325863772
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

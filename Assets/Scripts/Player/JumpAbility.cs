@@ -65,6 +65,9 @@ public class JumpAbility : BaseAbility
 
     private void TryJump(InputAction.CallbackContext value)
     {
+        if (!linkedInput.CanJump)
+            return;
+
         if(!isPermitted || linkedStateMachine.currentState == PlayerStates.State.KnockBack || linkedStateMachine.currentState == PlayerStates.State.Death) return;
 
         if(linkedStateMachine.currentState == PlayerStates.State.Ladders)
