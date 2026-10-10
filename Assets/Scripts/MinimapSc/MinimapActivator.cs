@@ -28,7 +28,9 @@ public class MinimapActivator : MonoBehaviour
             mapActivated = !mapActivated;
             minimapCanvasGroup.alpha = 0;
             player.gatherInput.DisableMinimap();
-            if(player.playerStats.GetCurrentHealth() > 0)
+            if (//player.playerStats.GetCurrentHealth() > 0
+                player.stateMachine.currentState != PlayerStates.State.Death
+                && Interact.isInteracting == false)
                 player.gatherInput.EnablePlayerMap();
         }
         else

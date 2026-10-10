@@ -6,6 +6,7 @@ public class Interact : MonoBehaviour
 {
     public InputActionReference interactActionReference;
     private IInteractable currentInteractable;
+    public static bool isInteracting = false;
 
     private void OnEnable()
     {
@@ -17,7 +18,7 @@ public class Interact : MonoBehaviour
     }
     private void TryToInteract(InputAction.CallbackContext value)
     {
-        if(currentInteractable != null)
+        if(currentInteractable != null && isInteracting == false)
         {
             currentInteractable.CustomInteract();
         }

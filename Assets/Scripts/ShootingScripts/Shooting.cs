@@ -128,6 +128,8 @@ public class Shooting : MonoBehaviour
         if (currentWeapon.currentAmmo <= 0 || currentWeapon.isReloading)
             return;
 
+        currentWeapon.source.Play();
+
         Instantiate(currentWeapon.shellPrefab, currentWeapon.shellSpawnPoint.position, currentWeapon.transform.rotation);
         currentWeapon.PlayShootEffect();
 

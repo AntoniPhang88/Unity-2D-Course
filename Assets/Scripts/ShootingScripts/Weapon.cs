@@ -34,6 +34,9 @@ public class Weapon : MonoBehaviour
     public float visibleLineTime;
     public float widthMultiplier;
 
+    [Header("Audio")]
+    public AudioSource source;
+
     [SerializeField]
     private WeaponData weaponData = new WeaponData();
     private ShootEffect shootingEffect;

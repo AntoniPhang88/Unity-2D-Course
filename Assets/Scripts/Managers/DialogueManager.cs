@@ -39,6 +39,7 @@ public class DialogueManager : MonoBehaviour
         currentLineIndex = 0;
         dialogueUI.SetActive(true);
         gatherInput.DialogueActive();
+        Interact.isInteracting = true;
         ShowLine();
     }
     private void ShowLine()
@@ -84,6 +85,7 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.SetActive(false);
         currentDialogue = null;
         gatherInput.DialogueNotActive();
+        Interact.isInteracting = false;
     }
     private IEnumerator TypeLine(string line)
     {
