@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine.UI;
 using System.Collections;
 using Unity.VisualScripting;
+using System.Collections.Generic;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -15,6 +16,15 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI speakerNameText;
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private float typingSpeed = 0.03f;
+
+    [Header("Choices UI")]
+    [SerializeField] private GameObject choicesPanel;
+    [SerializeField] private GameObject choicesButtonPrefab;
+
+    private List<ChoiceButton> actionChoiceButtons = new List<ChoiceButton>();
+    private DialogueChoice[] activeChoices;
+    private bool choicesVisible;
+    private int selectedChoiceIndex;
 
     private DialogueObject currentDialogue;
     private int currentLineIndex;
@@ -32,6 +42,37 @@ public class DialogueManager : MonoBehaviour
             Destroy(gameObject);
 
         DontDestroyOnLoad(gameObject);
+    }
+    private void ShowChoices()
+    {
+        activeChoices = currentDialogue.choices;
+        if(activeChoices.Length == 0)
+        {
+            EndDialogue();
+            return;
+        }
+        //destroy old button, create new choice buttons, select the first one, update UI
+        ClearActiveChoiceButtons();
+        choicesPanel.SetActive(true);
+        choicesVisible = true;
+
+        for(int i = 0; i < activeChoices.Length; i++)
+        {
+            var go = Instantiate(choicesButtonPrefab, choicesPanel.transform);
+            var cb = go.GetComponent<ChoiceButton>();
+
+            cb.Initialize(this, i, activeChoices[i].choiceText);
+            actionChoiceButtons.Add(cb);
+        }
+    }
+    private void ClearActiveChoiceButtons()
+    {
+        foreach(var cb in actionChoiceButtons)
+        {
+            if(cb != null)
+                Destroy(cb.gameObject);
+        }
+        actionChoiceButtons.Clear();
     }
     public void StartDialogue(DialogueObject dialogue)
     {
@@ -56,7 +97,14 @@ public class DialogueManager : MonoBehaviour
         currentLineIndex++;
         if(currentLineIndex >= currentDialogue.lines.Length)
         {
-            EndDialogue();
+            if(currentDialogue.choices != null && currentDialogue.choices.Length > 0)
+            {
+                ShowChoices();
+            }
+            else
+            {
+                EndDialogue();
+            }
         }
         else
         {
@@ -79,6 +127,11 @@ public class DialogueManager : MonoBehaviour
         StopCoroutine(typingCoroutine);
         dialogueText.text = currentDialogue.lines[currentLineIndex].dialogueText;
         isTyping = false;
+
+        if (currentLineIndex == currentDialogue.lines.Length-1 && currentDialogue.choices != null && currentDialogue.choices.Length > 0)
+        {
+            ShowChoices();
+        }
     }
     private void EndDialogue()
     {
@@ -97,5 +150,10 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
         isTyping = false;
+
+        if (currentLineIndex == currentDialogue.lines.Length - 1 && currentDialogue.choices != null && currentDialogue.choices.Length > 0)
+        {
+            ShowChoices();
+        }
     }
 }

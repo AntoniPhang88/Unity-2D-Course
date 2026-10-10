@@ -39,7 +39,10 @@ public class DeathAbility : BaseAbility
         }
         else
         {
-            LevelManager.instance.RestartLevel();
+            //LevelManager.instance.RestartLevel();
+            CheckpointData checkData = new CheckpointData();
+            SaveLoadManager.instance.Save(checkData, SaveLoadManager.instance.folderName, SaveLoadManager.instance.fileCheckPoint);
+            LevelManager.instance.LoadLevelString(checkData.sceneToLoad);
         }
     }
 }
