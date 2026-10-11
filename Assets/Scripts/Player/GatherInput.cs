@@ -110,6 +110,14 @@ public class GatherInput : MonoBehaviour
     {
         playerMap.Disable();
     }
+    public void EnableUIMap()
+    {
+        uiMap.Enable();
+    }
+    public void DisableUIMap()
+    {
+        uiMap.Disable();
+    }
     public void DialogueActive()
     {
         dialogueActive = true;
@@ -117,6 +125,7 @@ public class GatherInput : MonoBehaviour
         horizontalInput = 0;
         verticalInput = 0;
         dialogueMap?.Enable();
+        //EnableUIMap();
     }
     public void DialogueNotActive()
     {
@@ -125,6 +134,7 @@ public class GatherInput : MonoBehaviour
         dialogueActive = false;
         dialogueMap?.Disable();
         EnablePlayerMap();
+        //DisableUIMap();
     }
 
     private bool IsDialogueButtonPressed()

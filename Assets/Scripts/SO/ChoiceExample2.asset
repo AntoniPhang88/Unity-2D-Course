@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ChoiceExample2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueChoice
   choiceText: No
-  nextDialogueObject: {fileID: 0}
+  nextDialogueObject: {fileID: 11400000, guid: d6d4bc428ec09014f863e6e2283432f0, type: 2}
   dialogueAction: 0

@@ -24,10 +24,12 @@ public class ChoiceButton : MonoBehaviour, ISelectHandler
     public void OnSelect(BaseEventData eventData)
     {
         Debug.Log("Button Selected");
+        DialogueManager.dialogueManagerInstance.SetChoiceIndex(index);
     }
 
     private void OnClicked()
     {
         Debug.Log("OnClicked");
+        dialogueManager.SelectChoice(index);
     }
 }
